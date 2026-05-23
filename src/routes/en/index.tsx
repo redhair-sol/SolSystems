@@ -1,10 +1,10 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { ContactPage } from "../components/pages/ContactPage";
-import { strings } from "../i18n/strings";
+import { HomePage } from "../../components/pages/HomePage";
+import { strings } from "../../i18n/strings";
 
-const t = strings.el.contact;
+const t = strings.en.home;
 
-export const Route = createFileRoute("/contact")({
+export const Route = createFileRoute("/en/")({
   head: () => ({
     meta: [
       { title: t.metaTitle },
@@ -13,5 +13,5 @@ export const Route = createFileRoute("/contact")({
       { property: "og:description", content: t.metaDescription },
     ],
   }),
-  component: ContactPage,
+  component: HomePage,
 });
