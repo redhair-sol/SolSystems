@@ -1,8 +1,9 @@
 {
-  "name": "tanstack_start_ts",
+  "name": "solsystems",
   "private": true,
   "sideEffects": false,
   "type": "module",
+  "packageManager": "pnpm@11.1.3",
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
