@@ -23,48 +23,31 @@ export function AboutPage() {
             <br />
             {t.titleLine2}
           </h1>
-          <p className="mt-6 text-lg leading-relaxed text-muted-foreground">{t.intro1}</p>
-          <p className="mt-4 text-lg leading-relaxed text-muted-foreground">{t.intro2}</p>
+          <p className="mt-6 text-lg leading-relaxed text-muted-foreground">{t.intro}</p>
         </motion.div>
 
-        <div className="grid gap-8 lg:grid-cols-2">
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            className="rounded-2xl border border-border/60 bg-card p-8 sm:p-10"
-          >
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mx-auto max-w-3xl"
+        >
+          <div className="rounded-2xl border border-border/60 bg-card p-8 sm:p-10">
             <h2 className="text-2xl font-bold sm:text-3xl" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
-              {t.story.title}
+              {t.approach.title}
             </h2>
-            <div className="mt-6 space-y-4 text-muted-foreground">
-              {t.story.paragraphs.map((p, i) => (
-                <p key={i}>{p}</p>
+            <ol className="mt-6 space-y-4">
+              {t.approach.steps.map((step, i) => (
+                <li key={i} className="flex gap-4">
+                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary/10 text-sm font-bold text-primary">
+                    {i + 1}
+                  </span>
+                  <span className="text-muted-foreground">{step}</span>
+                </li>
               ))}
-            </div>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            className="flex flex-col gap-6"
-          >
-            <div className="rounded-2xl border border-border/60 bg-card p-8 sm:p-10">
-              <h3 className="text-xl font-bold" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>{t.approach.title}</h3>
-              <ol className="mt-6 space-y-4">
-                {t.approach.steps.map((step, i) => (
-                  <li key={i} className="flex gap-4">
-                    <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary/10 text-sm font-bold text-primary">
-                      {i + 1}
-                    </span>
-                    <span className="text-muted-foreground">{step}</span>
-                  </li>
-                ))}
-              </ol>
-            </div>
-          </motion.div>
-        </div>
+            </ol>
+          </div>
+        </motion.div>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}

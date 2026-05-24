@@ -151,18 +151,8 @@ export const strings = {
       eyebrow: "Σχετικά με εμάς",
       titleLine1: "Συνεργάτες τεχνολογίας,",
       titleLine2: "όχι απλώς προμηθευτές",
-      intro1:
-        "Ιδρύθηκε το 2013, η SolSystems εξελίχθηκε από μια μικρή ομάδα παθιασμένων μηχανικών σε έναν αξιόπιστο τεχνολογικό συνεργάτη για οργανισμούς σε όλη την Ευρώπη και πέρα από αυτή.",
-      intro2:
+      intro:
         "Πιστεύουμε ότι η σπουδαία τεχνολογία είναι αόρατη. Απλώς δουλεύει. Η αποστολή μας είναι να φτιάχνουμε συστήματα τόσο αξιόπιστα και διαισθητικά, ώστε οι πελάτες μας να ξεχνούν την πολυπλοκότητα από κάτω.",
-      story: {
-        title: "Η Ιστορία μας",
-        paragraphs: [
-          "Ξεκινήσαμε ως ομάδα δύο ατόμων σε ένα μικρό διαμέρισμα στην Αθήνα και εξελιχθήκαμε σε ολοκληρωμένη εταιρεία συμβούλων τεχνολογίας που εξυπηρετεί μεγάλους πελάτες σε χρηματοοικονομικά, υγεία, εφοδιαστική και ηλεκτρονικό εμπόριο.",
-          "Σε 12 χρόνια έχουμε μάθει ότι οι καλύτερες τεχνολογικές λύσεις γεννιούνται από βαθιά συνεργασία. Δεν εμφανιζόμαστε προσωρινά, παραδίδουμε μια αναφορά και φεύγουμε. Ενσωματωνόμαστε στην ομάδα σας, καταλαβαίνουμε τους περιορισμούς σας και δημιουργούμε μαζί σας λύσεις που πραγματικά υιοθετούνται.",
-          "Σήμερα, η ομάδα μας με 40+ μηχανικούς, αρχιτέκτονες και ειδικούς ασφαλείας λειτουργεί από γραφεία στην Αθήνα και απομακρυσμένα σε όλη την Ευρώπη, προσφέροντας την ίδια προσωπική και υψηλής ποιότητας εξυπηρέτηση που χαρακτήριζε τα πρώτα μας έργα.",
-        ],
-      },
       approach: {
         title: "Η Προσέγγισή μας",
         steps: [
@@ -407,18 +397,8 @@ export const strings = {
       eyebrow: "About Us",
       titleLine1: "Technology partners,",
       titleLine2: "not just vendors",
-      intro1:
-        "Founded in 2013, SolSystems has grown from a small team of passionate engineers into a trusted technology partner for organizations across Europe and beyond.",
-      intro2:
+      intro:
         "We believe that great technology is invisible. It just works. Our mission is to build systems so reliable and intuitive that our clients forget about the complexity underneath.",
-      story: {
-        title: "Our Story",
-        paragraphs: [
-          "What started as a two-person operation in a small Athens apartment has evolved into a full-service technology consultancy serving enterprise clients across fintech, healthcare, logistics, and e-commerce.",
-          "Over 12 years, we have learned that the best technology solutions are born from deep collaboration. We do not parachute in, deliver a report, and leave. We embed with your team, understand your constraints, and co-create solutions that actually get adopted.",
-          "Today, our team of 40+ engineers, architects, and security specialists operates from offices in Athens and remotely across Europe, delivering the same hands-on, high-touch service that defined our earliest projects.",
-        ],
-      },
       approach: {
         title: "Our Approach",
         steps: [
