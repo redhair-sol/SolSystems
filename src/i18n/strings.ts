@@ -34,8 +34,8 @@ export const strings = {
       ],
       whatWeDo: {
         eyebrow: "Τι κάνουμε",
-        titleLine1: "Σχεδιασμένο για κλιμάκωση.",
-        titleLine2: "Φτιαγμένο για αντίκτυπο.",
+        titleLine1: "Λύσεις σχεδιασμένες για κλιμάκωση.",
+        titleLine2: "Φτιαγμένες για αντίκτυπο.",
         services: [
           {
             title: "Αρχιτεκτονική Cloud",
@@ -302,8 +302,8 @@ export const strings = {
       ],
       whatWeDo: {
         eyebrow: "What We Do",
-        titleLine1: "Built for scale.",
-        titleLine2: "Designed for impact.",
+        titleLine1: "Solutions designed for scale.",
+        titleLine2: "Built for impact.",
         services: [
           {
             title: "Cloud Architecture",
