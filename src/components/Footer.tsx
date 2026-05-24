@@ -17,14 +17,17 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-6 py-16">
         <div className="grid gap-12 md:grid-cols-4">
           <div className="md:col-span-2">
-            <div className="flex items-center gap-2">
-              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary">
-                <span className="text-lg font-bold text-primary-foreground" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>S</span>
-              </div>
-              <span className="text-xl font-bold tracking-tight" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
-                Sol<span className="text-primary">Systems</span>
-              </span>
-            </div>
+            <picture>
+              <source type="image/webp" srcSet="/images/logo.webp" />
+              <img
+                src="/images/logo-opt.png"
+                alt="SolSystems"
+                className="h-10 w-auto mix-blend-screen"
+                width={600}
+                height={273}
+                decoding="async"
+              />
+            </picture>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted-foreground">{t.footer.tagline}</p>
           </div>
 

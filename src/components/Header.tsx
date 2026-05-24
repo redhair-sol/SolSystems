@@ -20,13 +20,18 @@ export function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-border/40 bg-background/80 backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-        <Link to={localizedHref(locale, "home")} className="flex items-center gap-2">
-          <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary">
-            <span className="text-lg font-bold text-primary-foreground" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>S</span>
-          </div>
-          <span className="text-xl font-bold tracking-tight" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
-            Sol<span className="text-primary">Systems</span>
-          </span>
+        <Link to={localizedHref(locale, "home")} className="flex items-center" aria-label="SolSystems">
+          <picture>
+            <source type="image/webp" srcSet="/images/logo.webp" />
+            <img
+              src="/images/logo-opt.png"
+              alt="SolSystems"
+              className="h-10 w-auto mix-blend-screen"
+              width={600}
+              height={273}
+              decoding="async"
+            />
+          </picture>
         </Link>
 
         <nav className="hidden md:flex items-center gap-1">
