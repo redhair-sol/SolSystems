@@ -12,7 +12,7 @@ export const strings = {
     langSwitchLabel: "Switch to English",
 
     home: {
-      metaTitle: "SolSystems — Λύσεις Πληροφορικής για Επιχειρήσεις",
+      metaTitle: "SolSystems: Λύσεις Πληροφορικής για Επιχειρήσεις",
       metaDescription:
         "Η SolSystems σχεδιάζει και υλοποιεί υποδομές πληροφορικής, αρχιτεκτονικές cloud και custom λογισμικό για επιχειρήσεις με υψηλές απαιτήσεις.",
       hero: {
@@ -21,7 +21,7 @@ export const strings = {
         titleHighlight: "προωθεί",
         titleAfter: "την επιχείρηση",
         subtitle:
-          "Υποδομές IT για επιχειρήσεις, αρχιτεκτονική cloud και custom λογισμικό — για οργανισμούς που δεν συμβιβάζονται.",
+          "Υποδομές IT για επιχειρήσεις, αρχιτεκτονική cloud και custom λογισμικό, για οργανισμούς που δεν συμβιβάζονται.",
         ctaPrimary: "Δείτε τις υπηρεσίες",
         ctaSecondary: "Ξεκινήστε ένα έργο",
         heroImageAlt: "Οπτικοποίηση τεχνολογίας",
@@ -65,7 +65,7 @@ export const strings = {
         titleLine1: "Δεν παραδίδουμε απλώς κώδικα.",
         titleLine2: "Παραδίδουμε αποτελέσματα.",
         intro:
-          "Κάθε συνεργασία ξεκινά από την κατανόηση των στόχων της επιχείρησής σας. Ευθυγραμμίζουμε τις τεχνολογικές αποφάσεις με μετρήσιμα αποτελέσματα — όχι με buzzwords.",
+          "Κάθε συνεργασία ξεκινά από την κατανόηση των στόχων της επιχείρησής σας. Ευθυγραμμίζουμε τις τεχνολογικές αποφάσεις με μετρήσιμα αποτελέσματα, όχι buzzwords.",
         items: [
           {
             title: "Αφοσιωμένες Ομάδες",
@@ -90,7 +90,7 @@ export const strings = {
     },
 
     services: {
-      metaTitle: "Υπηρεσίες — SolSystems",
+      metaTitle: "Υπηρεσίες | SolSystems",
       metaDescription:
         "Εξερευνήστε τις ολοκληρωμένες υπηρεσίες IT μας: αρχιτεκτονική cloud, custom development, κυβερνοασφάλεια και data engineering.",
       eyebrow: "Υπηρεσίες",
@@ -145,31 +145,31 @@ export const strings = {
     },
 
     about: {
-      metaTitle: "Σχετικά — SolSystems",
+      metaTitle: "Σχετικά | SolSystems",
       metaDescription:
-        "Γνωρίστε τη SolSystems — την αποστολή, τις αξίες και την ομάδα πίσω από τις enterprise λύσεις IT μας.",
+        "Γνωρίστε τη SolSystems: την αποστολή, τις αξίες και την ομάδα πίσω από τις enterprise λύσεις IT μας.",
       eyebrow: "Σχετικά με εμάς",
       titleLine1: "Συνεργάτες τεχνολογίας,",
       titleLine2: "όχι απλώς προμηθευτές",
       intro1:
         "Ιδρύθηκε το 2013, η SolSystems εξελίχθηκε από μια μικρή ομάδα παθιασμένων μηχανικών σε έναν αξιόπιστο τεχνολογικό συνεργάτη για οργανισμούς σε όλη την Ευρώπη και πέρα από αυτή.",
       intro2:
-        "Πιστεύουμε ότι η σπουδαία τεχνολογία είναι αόρατη — απλώς δουλεύει. Η αποστολή μας είναι να φτιάχνουμε συστήματα τόσο αξιόπιστα και διαισθητικά, ώστε οι πελάτες μας να ξεχνούν την πολυπλοκότητα από κάτω.",
+        "Πιστεύουμε ότι η σπουδαία τεχνολογία είναι αόρατη. Απλώς δουλεύει. Η αποστολή μας είναι να φτιάχνουμε συστήματα τόσο αξιόπιστα και διαισθητικά, ώστε οι πελάτες μας να ξεχνούν την πολυπλοκότητα από κάτω.",
       story: {
         title: "Η Ιστορία μας",
         paragraphs: [
           "Ξεκινήσαμε ως ομάδα δύο ατόμων σε ένα μικρό διαμέρισμα στην Αθήνα και εξελιχθήκαμε σε ολοκληρωμένη εταιρεία συμβούλων τεχνολογίας που εξυπηρετεί enterprise πελάτες σε fintech, υγεία, logistics και e-commerce.",
-          "Σε 12 χρόνια έχουμε μάθει ότι οι καλύτερες τεχνολογικές λύσεις γεννιούνται από βαθιά συνεργασία. Δεν εμφανιζόμαστε προσωρινά, παραδίδουμε μια αναφορά και φεύγουμε. Ενσωματωνόμαστε στην ομάδα σας, καταλαβαίνουμε τους περιορισμούς σας και συν-δημιουργούμε λύσεις που πραγματικά υιοθετούνται.",
-          "Σήμερα, η ομάδα μας με 40+ μηχανικούς, αρχιτέκτονες και ειδικούς ασφαλείας λειτουργεί από γραφεία στην Αθήνα και απομακρυσμένα σε όλη την Ευρώπη — προσφέροντας την ίδια hands-on, υψηλής ποιότητας εξυπηρέτηση που χαρακτήριζε τα πρώτα μας έργα.",
+          "Σε 12 χρόνια έχουμε μάθει ότι οι καλύτερες τεχνολογικές λύσεις γεννιούνται από βαθιά συνεργασία. Δεν εμφανιζόμαστε προσωρινά, παραδίδουμε μια αναφορά και φεύγουμε. Ενσωματωνόμαστε στην ομάδα σας, καταλαβαίνουμε τους περιορισμούς σας και δημιουργούμε μαζί σας λύσεις που πραγματικά υιοθετούνται.",
+          "Σήμερα, η ομάδα μας με 40+ μηχανικούς, αρχιτέκτονες και ειδικούς ασφαλείας λειτουργεί από γραφεία στην Αθήνα και απομακρυσμένα σε όλη την Ευρώπη, προσφέροντας την ίδια hands-on, υψηλής ποιότητας εξυπηρέτηση που χαρακτήριζε τα πρώτα μας έργα.",
         ],
       },
       approach: {
         title: "Η Προσέγγισή μας",
         steps: [
-          "Βαθιά γνωριμία — καταλαβαίνουμε την επιχείρησή σας πριν αγγίξουμε κώδικα",
-          "Αρχιτεκτονική σαφήνεια — σχεδιάζουμε πριν χτίσουμε, πάντα",
-          "Σταδιακή παράδοση — εβδομαδιαία demos, όχι τριμηνιαίες εκπλήξεις",
-          "Μεταφορά γνώσης — η ομάδα σας έχει την κυριότητα της λύσης όταν τελειώσουμε",
+          "Βαθιά γνωριμία: καταλαβαίνουμε την επιχείρησή σας πριν αγγίξουμε κώδικα",
+          "Αρχιτεκτονική σαφήνεια: σχεδιάζουμε πριν χτίσουμε, πάντα",
+          "Σταδιακή παράδοση: εβδομαδιαία demos, όχι τριμηνιαίες εκπλήξεις",
+          "Μεταφορά γνώσης: η ομάδα σας έχει την κυριότητα της λύσης όταν τελειώσουμε",
         ],
       },
       valuesHeading: "Οι Αξίες μας",
@@ -187,7 +187,7 @@ export const strings = {
         {
           title: "Νοοτροπία Συνεργασίας",
           description:
-            "Λειτουργούμε ως προέκταση της ομάδας σας — επενδύοντας στη μακροχρόνια επιτυχία σας.",
+            "Λειτουργούμε ως προέκταση της ομάδας σας, επενδύοντας στη μακροχρόνια επιτυχία σας.",
         },
         {
           title: "Ποιότητα χωρίς Συμβιβασμούς",
@@ -202,7 +202,7 @@ export const strings = {
     },
 
     contact: {
-      metaTitle: "Επικοινωνία — SolSystems",
+      metaTitle: "Επικοινωνία | SolSystems",
       metaDescription: "Επικοινωνήστε με τη SolSystems. Ας συζητήσουμε το επόμενο έργο IT σας.",
       eyebrow: "Επικοινωνία",
       titleLine1: "Ας φτιάξουμε",
@@ -280,7 +280,7 @@ export const strings = {
     langSwitchLabel: "Αλλαγή σε Ελληνικά",
 
     home: {
-      metaTitle: "SolSystems — Enterprise IT Solutions",
+      metaTitle: "SolSystems: Enterprise IT Solutions",
       metaDescription:
         "SolSystems delivers cutting-edge IT infrastructure, cloud architecture, and custom software for ambitious organizations.",
       hero: {
@@ -289,7 +289,7 @@ export const strings = {
         titleHighlight: "moves",
         titleAfter: "business forward",
         subtitle:
-          "Enterprise IT infrastructure, cloud architecture, and bespoke software — engineered for organizations that refuse to settle.",
+          "Enterprise IT infrastructure, cloud architecture, and bespoke software, engineered for organizations that refuse to settle.",
         ctaPrimary: "Explore Services",
         ctaSecondary: "Start a Project",
         heroImageAlt: "Technology visualization",
@@ -333,7 +333,7 @@ export const strings = {
         titleLine1: "We do not just deliver code.",
         titleLine2: "We deliver outcomes.",
         intro:
-          "Every engagement starts with understanding your business goals. We align technology decisions with measurable business outcomes — not buzzwords.",
+          "Every engagement starts with understanding your business goals. We align technology decisions with measurable business outcomes, not buzzwords.",
         items: [
           { title: "Dedicated Teams", desc: "Senior engineers assigned to your project. No junior handoffs." },
           { title: "Rapid Delivery", desc: "Agile sprints with weekly demos. See progress, not promises." },
@@ -348,7 +348,7 @@ export const strings = {
     },
 
     services: {
-      metaTitle: "Services — SolSystems",
+      metaTitle: "Services | SolSystems",
       metaDescription:
         "Explore our comprehensive IT services: cloud architecture, custom development, cybersecurity, and data engineering.",
       eyebrow: "Services",
@@ -402,30 +402,30 @@ export const strings = {
     },
 
     about: {
-      metaTitle: "About — SolSystems",
-      metaDescription: "Learn about SolSystems — our mission, values, and the team behind our enterprise IT solutions.",
+      metaTitle: "About | SolSystems",
+      metaDescription: "Learn about SolSystems: our mission, values, and the team behind our enterprise IT solutions.",
       eyebrow: "About Us",
       titleLine1: "Technology partners,",
       titleLine2: "not just vendors",
       intro1:
         "Founded in 2013, SolSystems has grown from a small team of passionate engineers into a trusted technology partner for organizations across Europe and beyond.",
       intro2:
-        "We believe that great technology is invisible — it just works. Our mission is to build systems so reliable and intuitive that our clients forget about the complexity underneath.",
+        "We believe that great technology is invisible. It just works. Our mission is to build systems so reliable and intuitive that our clients forget about the complexity underneath.",
       story: {
         title: "Our Story",
         paragraphs: [
           "What started as a two-person operation in a small Athens apartment has evolved into a full-service technology consultancy serving enterprise clients across fintech, healthcare, logistics, and e-commerce.",
           "Over 12 years, we have learned that the best technology solutions are born from deep collaboration. We do not parachute in, deliver a report, and leave. We embed with your team, understand your constraints, and co-create solutions that actually get adopted.",
-          "Today, our team of 40+ engineers, architects, and security specialists operates from offices in Athens and remotely across Europe — delivering the same hands-on, high-touch service that defined our earliest projects.",
+          "Today, our team of 40+ engineers, architects, and security specialists operates from offices in Athens and remotely across Europe, delivering the same hands-on, high-touch service that defined our earliest projects.",
         ],
       },
       approach: {
         title: "Our Approach",
         steps: [
-          "Deep discovery — we understand your business before touching any code",
-          "Architectural clarity — we design before we build, always",
-          "Iterative delivery — weekly demos, not quarterly surprises",
-          "Knowledge transfer — your team owns the solution when we are done",
+          "Deep discovery: we understand your business before touching any code",
+          "Architectural clarity: we design before we build, always",
+          "Iterative delivery: weekly demos, not quarterly surprises",
+          "Knowledge transfer: your team owns the solution when we are done",
         ],
       },
       valuesHeading: "What We Stand For",
@@ -440,7 +440,7 @@ export const strings = {
         },
         {
           title: "Partnership Mindset",
-          description: "We function as an extension of your team — invested in your long-term success.",
+          description: "We function as an extension of your team, invested in your long-term success.",
         },
         {
           title: "Uncompromising Quality",
@@ -455,7 +455,7 @@ export const strings = {
     },
 
     contact: {
-      metaTitle: "Contact — SolSystems",
+      metaTitle: "Contact | SolSystems",
       metaDescription: "Get in touch with SolSystems. Let's discuss your next IT project.",
       eyebrow: "Contact",
       titleLine1: "Let's build",
