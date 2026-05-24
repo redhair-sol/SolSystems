@@ -69,7 +69,7 @@ export const strings = {
         items: [
           {
             title: "Ίδιοι άνθρωποι σε όλο το έργο",
-            desc: "Οι ίδιοι μηχανικοί δουλεύουν στο έργο σας από την πρώτη συνάντηση μέχρι το τέλος. Δεν θα ξεκινάτε από την αρχή κάθε φορά που μπαίνει κάποιος νέος.",
+            desc: "Οι ίδιοι μηχανικοί δουλεύουν στο έργο σας από την πρώτη συνάντηση μέχρι το τέλος.",
           },
           {
             title: "Ξέρετε πάντα πού πάμε",
@@ -77,7 +77,7 @@ export const strings = {
           },
           {
             title: "Συστήματα που αντέχουν",
-            desc: "Φτιάχνουμε συστήματα που δεν πέφτουν όταν αυξάνεται η κίνηση. Λιγότερα προβλήματα στην παραγωγή, χαμηλότερα έξοδα hosting.",
+            desc: "Φτιάχνουμε συστήματα που ανταποκρίνονται σε κάθε πρόκληση: στον φόρτο, στις αλλαγές, στις νέες ανάγκες.",
           },
         ],
       },
@@ -335,9 +335,9 @@ export const strings = {
         intro:
           "Every engagement starts with understanding your business goals. We align technology decisions with measurable business outcomes, not buzzwords.",
         items: [
-          { title: "Same people, whole project", desc: "The same engineers work on your project from the first meeting to the end. You won't be starting over every time someone new joins." },
+          { title: "Same people, whole project", desc: "The same engineers work on your project from the first meeting to the end." },
           { title: "You always know where we are", desc: "From day one you know what's happening and when. Every week we tell you where we stand." },
-          { title: "Systems that hold up", desc: "We build systems that don't break when traffic grows. Fewer production issues, lower hosting costs." },
+          { title: "Systems that hold up", desc: "We build systems that meet every challenge: load, change, new requirements." },
         ],
       },
       cta: {
