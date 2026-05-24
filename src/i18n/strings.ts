@@ -14,14 +14,14 @@ export const strings = {
     home: {
       metaTitle: "SolSystems: Λύσεις Πληροφορικής για Επιχειρήσεις",
       metaDescription:
-        "Η SolSystems σχεδιάζει και υλοποιεί υποδομές πληροφορικής, αρχιτεκτονικές cloud και custom λογισμικό για επιχειρήσεις με υψηλές απαιτήσεις.",
+        "Η SolSystems σχεδιάζει και υλοποιεί υποδομές πληροφορικής, αρχιτεκτονικές cloud και εξατομικευμένο λογισμικό για επιχειρήσεις με υψηλές απαιτήσεις.",
       hero: {
         badge: "Ανοιχτοί σε νέες συνεργασίες",
         titleBefore: "Τεχνολογία που",
         titleHighlight: "προωθεί",
         titleAfter: "την επιχείρηση",
         subtitle:
-          "Υποδομές IT για επιχειρήσεις, αρχιτεκτονική cloud και custom λογισμικό, για οργανισμούς που δεν συμβιβάζονται.",
+          "Υποδομές IT για επιχειρήσεις, αρχιτεκτονική cloud και εξατομικευμένο λογισμικό, για οργανισμούς που δεν συμβιβάζονται.",
         ctaPrimary: "Δείτε τις υπηρεσίες",
         ctaSecondary: "Ξεκινήστε ένα έργο",
         heroImageAlt: "Οπτικοποίηση τεχνολογίας",
@@ -40,22 +40,22 @@ export const strings = {
           {
             title: "Αρχιτεκτονική Cloud",
             description:
-              "Επεκτάσιμη υποδομή cloud σε AWS, Azure και GCP, με enterprise-grade ασφάλεια και 99.99% uptime.",
+              "Επεκτάσιμη υποδομή cloud σε AWS, Azure και GCP, με ασφάλεια εταιρικού επιπέδου και 99.99% διαθεσιμότητα.",
           },
           {
-            title: "Custom Development",
+            title: "Εξατομικευμένη Ανάπτυξη",
             description:
-              "Εξατομικευμένες λύσεις λογισμικού με σύγχρονα frameworks. Από web εφαρμογές μέχρι enterprise συστήματα.",
+              "Εξατομικευμένες λύσεις λογισμικού με σύγχρονα πλαίσια ανάπτυξης. Από διαδικτυακές εφαρμογές μέχρι εταιρικά συστήματα.",
           },
           {
             title: "Κυβερνοασφάλεια",
             description:
-              "Ολοκληρωμένοι έλεγχοι ασφαλείας, penetration testing και compliance frameworks για τον οργανισμό σας.",
+              "Ολοκληρωμένοι έλεγχοι ασφαλείας, δοκιμές διείσδυσης και πλαίσια συμμόρφωσης για τον οργανισμό σας.",
           },
           {
-            title: "Data Engineering",
+            title: "Μηχανική Δεδομένων",
             description:
-              "Data pipelines, data warehouses και πλατφόρμες analytics που μετατρέπουν τα δεδομένα σε αποφάσεις.",
+              "Αγωγοί δεδομένων, αποθήκες δεδομένων και πλατφόρμες ανάλυσης που μετατρέπουν τα δεδομένα σε αποφάσεις.",
           },
         ],
         viewAll: "Όλες οι υπηρεσίες",
@@ -68,7 +68,7 @@ export const strings = {
           "Κάθε συνεργασία ξεκινά από την κατανόηση των στόχων της επιχείρησής σας. Ευθυγραμμίζουμε τις τεχνολογικές αποφάσεις με μετρήσιμα αποτελέσματα, όχι buzzwords.",
         items: [
           {
-            title: "Ίδιοι άνθρωποι σε όλο το έργο",
+            title: "Ίδια ομάδα σε όλο το έργο",
             desc: "Οι ίδιοι μηχανικοί δουλεύουν στο έργο σας από την πρώτη συνάντηση μέχρι την παράδοση.",
           },
           {
@@ -92,48 +92,48 @@ export const strings = {
     services: {
       metaTitle: "Υπηρεσίες | SolSystems",
       metaDescription:
-        "Εξερευνήστε τις ολοκληρωμένες υπηρεσίες IT μας: αρχιτεκτονική cloud, custom development, κυβερνοασφάλεια και data engineering.",
+        "Εξερευνήστε τις ολοκληρωμένες υπηρεσίες IT μας: αρχιτεκτονική cloud, εξατομικευμένη ανάπτυξη, κυβερνοασφάλεια και μηχανική δεδομένων.",
       eyebrow: "Υπηρεσίες",
       titleLine1: "Λύσεις σχεδιασμένες",
       titleLine2: "για την επιτυχία σας",
       intro:
-        "Από υποδομές cloud μέχρι custom εφαρμογές, παρέχουμε την τεχνογνωσία που χρειάζεται ο οργανισμός σας για να αναπτυχθεί στην ψηφιακή εποχή.",
+        "Από υποδομές cloud μέχρι εξατομικευμένες εφαρμογές, παρέχουμε την τεχνογνωσία που χρειάζεται ο οργανισμός σας για να αναπτυχθεί στην ψηφιακή εποχή.",
       list: [
         {
           title: "Αρχιτεκτονική Cloud",
           description:
             "Σχεδιάζουμε και υλοποιούμε επεκτάσιμη υποδομή cloud που εξελίσσεται μαζί με την επιχείρησή σας. Εξειδικευόμαστε σε multi-cloud στρατηγικές, container orchestration και serverless αρχιτεκτονικές.",
-          features: ["AWS, Azure, GCP", "Kubernetes & Docker", "CI/CD Pipelines", "Βελτιστοποίηση κόστους", "99.99% Uptime SLA"],
+          features: ["AWS, Azure, GCP", "Kubernetes & Docker", "CI/CD Pipelines", "Βελτιστοποίηση κόστους", "99.99% Διαθεσιμότητα SLA"],
         },
         {
-          title: "Custom Development",
+          title: "Εξατομικευμένη Ανάπτυξη",
           description:
-            "Λύσεις λογισμικού φτιαγμένες από το μηδέν. Χρησιμοποιούμε σύγχρονα frameworks και βέλτιστες πρακτικές για εφαρμογές γρήγορες, ασφαλείς και εύκολες στη συντήρηση.",
-          features: ["React & Next.js", "Node.js & Python", "Εφαρμογές κινητών", "Σχεδιασμός API", "Εκσυγχρονισμός Legacy"],
+            "Λύσεις λογισμικού φτιαγμένες από το μηδέν. Χρησιμοποιούμε σύγχρονα πλαίσια ανάπτυξης και βέλτιστες πρακτικές για εφαρμογές γρήγορες, ασφαλείς και εύκολες στη συντήρηση.",
+          features: ["React & Next.js", "Node.js & Python", "Εφαρμογές κινητών", "Σχεδιασμός API", "Εκσυγχρονισμός παλαιών συστημάτων"],
         },
         {
           title: "Κυβερνοασφάλεια",
           description:
-            "Προστατέψτε τον οργανισμό σας με ολοκληρωμένους ελέγχους ασφαλείας, penetration testing και compliance frameworks. Εντοπίζουμε τις ευπάθειες πριν τις βρουν οι επιτιθέμενοι.",
-          features: ["Penetration Testing", "Έλεγχοι Ασφαλείας", "Compliance (GDPR, ISO)", "Incident Response", "Εκπαίδευση Ασφαλείας"],
+            "Προστατέψτε τον οργανισμό σας με ολοκληρωμένους ελέγχους ασφαλείας, δοκιμές διείσδυσης και πλαίσια συμμόρφωσης. Εντοπίζουμε τις ευπάθειες πριν τις βρουν οι επιτιθέμενοι.",
+          features: ["Δοκιμές Διείσδυσης", "Έλεγχοι Ασφαλείας", "Συμμόρφωση (GDPR, ISO)", "Διαχείριση Συμβάντων", "Εκπαίδευση Ασφαλείας"],
         },
         {
-          title: "Data Engineering",
+          title: "Μηχανική Δεδομένων",
           description:
-            "Μετατρέψτε τα ακατέργαστα δεδομένα σε στρατηγικό πλεονέκτημα. Φτιάχνουμε data pipelines, data warehouses και πλατφόρμες analytics που οδηγούν σε τεκμηριωμένες αποφάσεις.",
-          features: ["Data Pipelines", "Data Warehousing", "Real-time Analytics", "BI Dashboards", "ML Infrastructure"],
+            "Μετατρέψτε τα ακατέργαστα δεδομένα σε στρατηγικό πλεονέκτημα. Φτιάχνουμε αγωγούς δεδομένων, αποθήκες δεδομένων και πλατφόρμες ανάλυσης που οδηγούν σε τεκμηριωμένες αποφάσεις.",
+          features: ["Αγωγοί Δεδομένων", "Αποθήκευση Δεδομένων", "Αναλύσεις Πραγματικού Χρόνου", "Πίνακες BI", "Υποδομή ML"],
         },
         {
           title: "Υποδομές IT",
           description:
             "Ολοκληρωμένη διαχείριση υποδομής, από τον σχεδιασμό δικτύου μέχρι την προμήθεια εξοπλισμού. Διατηρούμε τα συστήματά σας σε βέλτιστη απόδοση.",
-          features: ["Σχεδιασμός Δικτύου", "Προμήθεια Εξοπλισμού", "Virtualization", "Backup & Recovery", "Monitoring & Alerts"],
+          features: ["Σχεδιασμός Δικτύου", "Προμήθεια Εξοπλισμού", "Εικονικοποίηση", "Αντίγραφα Ασφαλείας & Ανάκτηση", "Παρακολούθηση & Ειδοποιήσεις"],
         },
         {
-          title: "DevOps & Automation",
+          title: "DevOps & Αυτοματοποίηση",
           description:
-            "Βελτιστοποιήστε τη ροή ανάπτυξης με αυτοματοποιημένα tests, deployment και διαχείριση υποδομής. Παραδίδετε γρηγορότερα και με σιγουριά.",
-          features: ["CI/CD Automation", "Infrastructure as Code", "Αυτοματοποιημένα Tests", "Release Management", "Observability"],
+            "Βελτιστοποιήστε τη ροή ανάπτυξης με αυτοματοποιημένες δοκιμές, deployment και διαχείριση υποδομής. Παραδίδετε γρηγορότερα και με σιγουριά.",
+          features: ["Αυτοματοποίηση CI/CD", "Υποδομή ως Κώδικας", "Αυτοματοποιημένες Δοκιμές", "Διαχείριση Εκδόσεων", "Παρατηρησιμότητα"],
         },
       ],
       cta: {
@@ -147,7 +147,7 @@ export const strings = {
     about: {
       metaTitle: "Σχετικά | SolSystems",
       metaDescription:
-        "Γνωρίστε τη SolSystems: την αποστολή, τις αξίες και την ομάδα πίσω από τις enterprise λύσεις IT μας.",
+        "Γνωρίστε τη SolSystems: την αποστολή, τις αξίες και την ομάδα πίσω από τις εταιρικές λύσεις IT μας.",
       eyebrow: "Σχετικά με εμάς",
       titleLine1: "Συνεργάτες τεχνολογίας,",
       titleLine2: "όχι απλώς προμηθευτές",
@@ -158,7 +158,7 @@ export const strings = {
         steps: [
           "Βαθιά γνωριμία: καταλαβαίνουμε την επιχείρησή σας πριν αγγίξουμε κώδικα",
           "Αρχιτεκτονική σαφήνεια: σχεδιάζουμε πριν χτίσουμε, πάντα",
-          "Σταδιακή παράδοση: εβδομαδιαία demos, όχι τριμηνιαίες εκπλήξεις",
+          "Σταδιακή παράδοση: εβδομαδιαίες παρουσιάσεις προόδου",
           "Μεταφορά γνώσης: η ομάδα σας έχει την κυριότητα της λύσης όταν τελειώσουμε",
         ],
       },
@@ -181,7 +181,7 @@ export const strings = {
         },
         {
           title: "Ποιότητα χωρίς Συμβιβασμούς",
-          description: "Χωρίς συντομεύσεις. Χωρίς technical debt. Κάθε λύση είναι φτιαγμένη να διαρκεί.",
+          description: "Χωρίς συντομεύσεις. Χωρίς τεχνικό χρέος. Κάθε λύση είναι φτιαγμένη να διαρκεί.",
         },
       ],
       cta: {
@@ -218,9 +218,9 @@ export const strings = {
         serviceSelect: "Επιλέξτε υπηρεσία",
         serviceOptions: {
           cloud: "Αρχιτεκτονική Cloud",
-          development: "Custom Development",
+          development: "Εξατομικευμένη Ανάπτυξη",
           security: "Κυβερνοασφάλεια",
-          data: "Data Engineering",
+          data: "Μηχανική Δεδομένων",
           other: "Άλλο / Δεν είμαι σίγουρος",
         },
         message: "Μήνυμα",
@@ -325,7 +325,7 @@ export const strings = {
         intro:
           "Every engagement starts with understanding your business goals. We align technology decisions with measurable business outcomes, not buzzwords.",
         items: [
-          { title: "Same people, whole project", desc: "The same engineers work on your project from the first meeting to delivery." },
+          { title: "Same team, whole project", desc: "The same engineers work on your project from the first meeting to delivery." },
           { title: "Always informed of progress", desc: "From day one you know what's happening and when. Real-time progress visibility, whenever you need it." },
           { title: "Systems that hold up", desc: "We build systems that meet every challenge: load, change, new requirements." },
         ],
