@@ -68,16 +68,16 @@ export const strings = {
           "Κάθε συνεργασία ξεκινά από την κατανόηση των στόχων της επιχείρησής σας. Ευθυγραμμίζουμε τις τεχνολογικές αποφάσεις με μετρήσιμα αποτελέσματα, όχι buzzwords.",
         items: [
           {
-            title: "Αφοσιωμένες Ομάδες",
-            desc: "Senior μηχανικοί αποκλειστικά στο έργο σας. Χωρίς ανάθεση σε juniors.",
+            title: "Ίδιοι άνθρωποι, όλο το έργο",
+            desc: "Οι ίδιοι μηχανικοί δουλεύουν στο έργο σας από την πρώτη συνάντηση μέχρι το τέλος. Δεν θα ξεκινάτε από την αρχή κάθε φορά που μπαίνει κάποιος νέος.",
           },
           {
-            title: "Γρήγορη Παράδοση",
-            desc: "Agile sprints με εβδομαδιαία demos. Πρόοδος, όχι υποσχέσεις.",
+            title: "Ξέρετε πάντα πού πάμε",
+            desc: "Από την πρώτη μέρα ξέρετε τι θα γίνει και πότε. Κάθε εβδομάδα σας ενημερώνουμε πού βρισκόμαστε.",
           },
           {
-            title: "Performance πάνω απ' όλα",
-            desc: "Αρχιτεκτονική βελτιστοποιημένη για ταχύτητα, ασφάλεια και κόστος.",
+            title: "Συστήματα που αντέχουν",
+            desc: "Φτιάχνουμε συστήματα που δεν πέφτουν όταν αυξάνεται η κίνηση. Λιγότερα προβλήματα στην παραγωγή, χαμηλότερα έξοδα hosting.",
           },
         ],
       },
@@ -335,9 +335,9 @@ export const strings = {
         intro:
           "Every engagement starts with understanding your business goals. We align technology decisions with measurable business outcomes, not buzzwords.",
         items: [
-          { title: "Dedicated Teams", desc: "Senior engineers assigned to your project. No junior handoffs." },
-          { title: "Rapid Delivery", desc: "Agile sprints with weekly demos. See progress, not promises." },
-          { title: "Performance First", desc: "Architecture optimized for speed, security, and cost-efficiency." },
+          { title: "Same people, whole project", desc: "The same engineers work on your project from the first meeting to the end. You won't be starting over every time someone new joins." },
+          { title: "You always know where we are", desc: "From day one you know what's happening and when. Every week we tell you where we stand." },
+          { title: "Systems that hold up", desc: "We build systems that don't break when traffic grows. Fewer production issues, lower hosting costs." },
         ],
       },
       cta: {
