@@ -28,8 +28,8 @@ export const strings = {
       },
       stats: [
         { value: "150+", label: "Ολοκληρωμένα Έργα" },
-        { value: "12", label: "Χρόνια Εμπειρίας" },
-        { value: "40+", label: "Ειδικοί Μηχανικοί" },
+        { value: "25", label: "Χρόνια Εμπειρίας" },
+        { value: "25+", label: "Τεχνολογίες" },
         { value: "99.9%", label: "SLA Διαθεσιμότητας" },
       ],
       whatWeDo: {
@@ -286,8 +286,8 @@ export const strings = {
       },
       stats: [
         { value: "150+", label: "Projects Delivered" },
-        { value: "12", label: "Years Experience" },
-        { value: "40+", label: "Expert Engineers" },
+        { value: "25", label: "Years Experience" },
+        { value: "25+", label: "Technologies" },
         { value: "99.9%", label: "Uptime SLA" },
       ],
       whatWeDo: {
