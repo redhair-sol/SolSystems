@@ -186,7 +186,7 @@ export const strings = {
       ],
       cta: {
         title: "Έχετε ένα έργο για συζήτηση;",
-        subtitle: "Πείτε μας τι χρειάζεστε και θα δούμε πώς μπορούμε να βοηθήσουμε.",
+        subtitle: "Πείτε μας τι χρειάζεστε και εμείς θα σχεδιάσουμε ή θα προτείνουμε την κατάλληλη λύση.",
         button: "Επικοινωνία",
       },
     },
@@ -429,7 +429,7 @@ export const strings = {
       ],
       cta: {
         title: "Have a project to discuss?",
-        subtitle: "Tell us what you need and we'll see how we can help.",
+        subtitle: "Tell us what you need and we'll design or recommend the right solution.",
         button: "Get in Touch",
       },
     },
