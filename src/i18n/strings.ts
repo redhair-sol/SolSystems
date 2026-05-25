@@ -428,8 +428,8 @@ export const strings = {
         },
       ],
       cta: {
-        title: "Want to work with us?",
-        subtitle: "We are always looking for ambitious partners with interesting challenges.",
+        title: "Have a project to discuss?",
+        subtitle: "We work with clients who need reliable solutions to serious technical challenges.",
         button: "Get in Touch",
       },
     },
