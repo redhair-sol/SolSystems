@@ -81,7 +81,7 @@ export function HomePage() {
 
             <motion.h1
               variants={fadeInUp}
-              className="text-5xl font-bold leading-[1.05] tracking-tight sm:text-6xl md:text-7xl lg:text-8xl"
+              className="text-5xl font-bold leading-[1.15] tracking-tight sm:text-6xl md:text-7xl lg:text-8xl"
               style={{ fontFamily: "'Space Grotesk', sans-serif" }}
             >
               {home.hero.titleBefore}{" "}
