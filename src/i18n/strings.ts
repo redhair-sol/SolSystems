@@ -120,7 +120,7 @@ export const strings = {
         "Εξερευνήστε τις ολοκληρωμένες υπηρεσίες IT μας: αρχιτεκτονική cloud, εξατομικευμένη ανάπτυξη, κυβερνοασφάλεια και μηχανική δεδομένων.",
       eyebrow: "Υπηρεσίες",
       titleLine1: "Λύσεις σχεδιασμένες",
-      titleLine2: "για την επιτυχία σας",
+      titleLine2: "στα μέτρα σας",
       intro:
         "Από υποδομές cloud μέχρι εξατομικευμένες εφαρμογές, παρέχουμε την τεχνογνωσία που χρειάζεται ο οργανισμός σας για να αναπτυχθεί στην ψηφιακή εποχή.",
       list: [
@@ -507,8 +507,8 @@ export const strings = {
       metaDescription:
         "Explore our comprehensive IT services: cloud architecture, custom development, cybersecurity, and data engineering.",
       eyebrow: "Services",
-      titleLine1: "Solutions engineered",
-      titleLine2: "for your success",
+      titleLine1: "Solutions",
+      titleLine2: "made to measure",
       intro:
         "From cloud infrastructure to custom applications, we provide the technology expertise your organization needs to thrive in the digital age.",
       list: [
