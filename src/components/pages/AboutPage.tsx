@@ -68,7 +68,7 @@ export function AboutPage() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: i * 0.1, duration: 0.5 }}
-                  className="rounded-2xl border border-border/60 bg-card p-6 text-center transition-all hover:border-primary/30 hover:bg-surface-elevated"
+                  className="rounded-2xl border border-border/60 bg-card p-6 text-center transition-all duration-200 hover:-translate-y-1 hover:border-primary/30 hover:bg-surface-elevated hover:shadow-xl hover:shadow-primary/10"
                 >
                   <div className="mx-auto mb-4 inline-flex rounded-xl bg-primary/10 p-3 text-primary">
                     <Icon size={24} />

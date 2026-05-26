@@ -14,10 +14,14 @@ import { Route as ServicesRouteImport } from './routes/services'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ProductsIndexRouteImport } from './routes/products/index'
 import { Route as EnIndexRouteImport } from './routes/en/index'
+import { Route as ProductsSolsuiteRouteImport } from './routes/products/solsuite'
 import { Route as EnServicesRouteImport } from './routes/en/services'
 import { Route as EnContactRouteImport } from './routes/en/contact'
 import { Route as EnAboutRouteImport } from './routes/en/about'
+import { Route as EnProductsIndexRouteImport } from './routes/en/products/index'
+import { Route as EnProductsSolsuiteRouteImport } from './routes/en/products/solsuite'
 
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   id: '/sitemap.xml',
@@ -44,9 +48,19 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ProductsIndexRoute = ProductsIndexRouteImport.update({
+  id: '/products/',
+  path: '/products/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const EnIndexRoute = EnIndexRouteImport.update({
   id: '/en/',
   path: '/en/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProductsSolsuiteRoute = ProductsSolsuiteRouteImport.update({
+  id: '/products/solsuite',
+  path: '/products/solsuite',
   getParentRoute: () => rootRouteImport,
 } as any)
 const EnServicesRoute = EnServicesRouteImport.update({
@@ -64,6 +78,16 @@ const EnAboutRoute = EnAboutRouteImport.update({
   path: '/en/about',
   getParentRoute: () => rootRouteImport,
 } as any)
+const EnProductsIndexRoute = EnProductsIndexRouteImport.update({
+  id: '/en/products/',
+  path: '/en/products/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EnProductsSolsuiteRoute = EnProductsSolsuiteRouteImport.update({
+  id: '/en/products/solsuite',
+  path: '/en/products/solsuite',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -74,7 +98,11 @@ export interface FileRoutesByFullPath {
   '/en/about': typeof EnAboutRoute
   '/en/contact': typeof EnContactRoute
   '/en/services': typeof EnServicesRoute
+  '/products/solsuite': typeof ProductsSolsuiteRoute
   '/en/': typeof EnIndexRoute
+  '/products/': typeof ProductsIndexRoute
+  '/en/products/solsuite': typeof EnProductsSolsuiteRoute
+  '/en/products/': typeof EnProductsIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -85,7 +113,11 @@ export interface FileRoutesByTo {
   '/en/about': typeof EnAboutRoute
   '/en/contact': typeof EnContactRoute
   '/en/services': typeof EnServicesRoute
+  '/products/solsuite': typeof ProductsSolsuiteRoute
   '/en': typeof EnIndexRoute
+  '/products': typeof ProductsIndexRoute
+  '/en/products/solsuite': typeof EnProductsSolsuiteRoute
+  '/en/products': typeof EnProductsIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -97,7 +129,11 @@ export interface FileRoutesById {
   '/en/about': typeof EnAboutRoute
   '/en/contact': typeof EnContactRoute
   '/en/services': typeof EnServicesRoute
+  '/products/solsuite': typeof ProductsSolsuiteRoute
   '/en/': typeof EnIndexRoute
+  '/products/': typeof ProductsIndexRoute
+  '/en/products/solsuite': typeof EnProductsSolsuiteRoute
+  '/en/products/': typeof EnProductsIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -110,7 +146,11 @@ export interface FileRouteTypes {
     | '/en/about'
     | '/en/contact'
     | '/en/services'
+    | '/products/solsuite'
     | '/en/'
+    | '/products/'
+    | '/en/products/solsuite'
+    | '/en/products/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -121,7 +161,11 @@ export interface FileRouteTypes {
     | '/en/about'
     | '/en/contact'
     | '/en/services'
+    | '/products/solsuite'
     | '/en'
+    | '/products'
+    | '/en/products/solsuite'
+    | '/en/products'
   id:
     | '__root__'
     | '/'
@@ -132,7 +176,11 @@ export interface FileRouteTypes {
     | '/en/about'
     | '/en/contact'
     | '/en/services'
+    | '/products/solsuite'
     | '/en/'
+    | '/products/'
+    | '/en/products/solsuite'
+    | '/en/products/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -144,7 +192,11 @@ export interface RootRouteChildren {
   EnAboutRoute: typeof EnAboutRoute
   EnContactRoute: typeof EnContactRoute
   EnServicesRoute: typeof EnServicesRoute
+  ProductsSolsuiteRoute: typeof ProductsSolsuiteRoute
   EnIndexRoute: typeof EnIndexRoute
+  ProductsIndexRoute: typeof ProductsIndexRoute
+  EnProductsSolsuiteRoute: typeof EnProductsSolsuiteRoute
+  EnProductsIndexRoute: typeof EnProductsIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -184,11 +236,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/products/': {
+      id: '/products/'
+      path: '/products'
+      fullPath: '/products/'
+      preLoaderRoute: typeof ProductsIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/en/': {
       id: '/en/'
       path: '/en'
       fullPath: '/en/'
       preLoaderRoute: typeof EnIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/products/solsuite': {
+      id: '/products/solsuite'
+      path: '/products/solsuite'
+      fullPath: '/products/solsuite'
+      preLoaderRoute: typeof ProductsSolsuiteRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/en/services': {
@@ -212,6 +278,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof EnAboutRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/en/products/': {
+      id: '/en/products/'
+      path: '/en/products'
+      fullPath: '/en/products/'
+      preLoaderRoute: typeof EnProductsIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/en/products/solsuite': {
+      id: '/en/products/solsuite'
+      path: '/en/products/solsuite'
+      fullPath: '/en/products/solsuite'
+      preLoaderRoute: typeof EnProductsSolsuiteRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -224,7 +304,11 @@ const rootRouteChildren: RootRouteChildren = {
   EnAboutRoute: EnAboutRoute,
   EnContactRoute: EnContactRoute,
   EnServicesRoute: EnServicesRoute,
+  ProductsSolsuiteRoute: ProductsSolsuiteRoute,
   EnIndexRoute: EnIndexRoute,
+  ProductsIndexRoute: ProductsIndexRoute,
+  EnProductsSolsuiteRoute: EnProductsSolsuiteRoute,
+  EnProductsIndexRoute: EnProductsIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

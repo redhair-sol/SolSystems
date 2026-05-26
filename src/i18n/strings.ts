@@ -3,6 +3,7 @@ export const strings = {
     nav: [
       { key: "home", label: "Αρχική" },
       { key: "services", label: "Υπηρεσίες" },
+      { key: "products", label: "Προϊόντα" },
       { key: "about", label: "Σχετικά" },
       { key: "contact", label: "Επικοινωνία" },
     ],
@@ -59,6 +60,30 @@ export const strings = {
           },
         ],
         viewAll: "Όλες οι υπηρεσίες μας",
+      },
+      products: {
+        eyebrow: "Εφαρμογές μας",
+        titleLine1: "Έτοιμες λύσεις",
+        titleLine2: "που έχουμε φτιάξει",
+        intro: "Δεν φτιάχνουμε μόνο εξατομικευμένες λύσεις. Έχουμε αναπτύξει και δικές μας εφαρμογές που λύνουν συγκεκριμένα προβλήματα IT.",
+        learnMore: "Μάθετε περισσότερα",
+        viewAll: "Όλα τα προϊόντα μας",
+        list: [
+          {
+            name: "SolSuite",
+            tagline: "Ολοκληρωμένο σύστημα διαχείρισης IT",
+            description:
+              "Τρεις ενότητες σε ένα: SolPass για διαχείριση κωδικών, SolAssets για εξοπλισμό και άδειες, SolIt για παρακολούθηση υποδομής και καθημερινά IT tasks.",
+            stack: ["ASP.NET Core", "SQL Server", "Active Directory / LDAP"],
+          },
+          {
+            name: "SolStatus",
+            tagline: "Status page εσωτερικών IT υπηρεσιών",
+            description:
+              "Real-time παρακολούθηση κατάστασης συστημάτων με role-based access control.",
+            stack: ["ASP.NET Core", "AD-integrated auth"],
+          },
+        ],
       },
       whyUs: {
         eyebrow: "Γιατί να μας επιλέξετε",
@@ -144,6 +169,121 @@ export const strings = {
       },
     },
 
+    productsListing: {
+      metaTitle: "Προϊόντα | SolSystems",
+      metaDescription:
+        "Δικές μας εφαρμογές για διαχείριση IT operations: SolSuite (κωδικοί, εξοπλισμός, υποδομή) και SolStatus (status page).",
+      eyebrow: "Προϊόντα",
+      titleLine1: "Δικά μας προϊόντα",
+      titleLine2: "για IT operations",
+      intro:
+        "Δεν αναπτύσσουμε μόνο εξατομικευμένες λύσεις. Έχουμε φτιάξει και δικές μας εφαρμογές που λύνουν συγκεκριμένα λειτουργικά προβλήματα IT.",
+      items: [
+        {
+          name: "SolSuite",
+          tagline: "Ολοκληρωμένο σύστημα διαχείρισης IT",
+          description:
+            "Τρία modules ενοποιημένα: SolPass (διαχείριση κωδικών), SolAssets (εξοπλισμός & άδειες), SolIt (υποδομή & καθημερινά tasks).",
+          hasDetail: true,
+          learnMore: "Μάθετε περισσότερα",
+        },
+        {
+          name: "SolStatus",
+          tagline: "Status page εσωτερικών IT υπηρεσιών",
+          description:
+            "Real-time παρακολούθηση κατάστασης συστημάτων με role-based access control.",
+          hasDetail: false,
+          learnMore: "",
+        },
+      ],
+      cta: {
+        title: "Ενδιαφέρει κάποιο από αυτά;",
+        subtitle: "Επικοινωνήστε για παρουσίαση ή προσαρμογή στο δικό σας περιβάλλον.",
+        button: "Επικοινωνία",
+      },
+    },
+
+    solsuite: {
+      metaTitle: "SolSuite: Σύστημα Διαχείρισης IT | SolSystems",
+      metaDescription:
+        "Ολοκληρωμένο σύστημα διαχείρισης IT για επιχειρήσεις: διαχείριση κωδικών (SolPass), εξοπλισμού και αδειών (SolAssets), και υποδομής (SolIt).",
+      breadcrumbHome: "Αρχική",
+      breadcrumbProducts: "Προϊόντα",
+      eyebrow: "Προϊόν",
+      title: "SolSuite",
+      tagline: "Ολοκληρωμένο σύστημα διαχείρισης IT",
+      intro:
+        "Το SolSuite ενοποιεί σε ένα εργαλείο όλα όσα χρειάζεται μια IT ομάδα: ασφαλή διαχείριση κωδικών, παρακολούθηση εξοπλισμού και αδειών, και έλεγχο υποδομής. Σχεδιασμένο για εταιρικά περιβάλλοντα με ενσωμάτωση Active Directory και πλήρη καταγραφή ενεργειών.",
+      modulesHeading: "Τρία modules. Μία πλατφόρμα.",
+      modulesIntro:
+        "Modular αρχιτεκτονική με granular AD-based access control. Κάθε εγκατάσταση ενεργοποιεί μόνο τα modules που χρειάζεται, και κάθε χρήστης βλέπει μόνο τα modules και τις επιμέρους λειτουργίες που του έχουν εγκριθεί.",
+      modules: [
+        {
+          name: "SolPass",
+          tagline: "Διαχείριση κωδικών και credentials",
+          description:
+            "Κρυπτογραφημένο vault με role-based πρόσβαση, ξεχωριστό προσωπικό vault ανά χρήστη, ενσωματωμένη γεννήτρια κωδικών, και ειδοποιήσεις λήξης. Πλήρες audit log σε κάθε ανάκτηση.",
+          features: [
+            "Encrypted shared vault με role-based πρόσβαση",
+            "Προσωπικό Vault με master password",
+            "SolGen: γεννήτρια ισχυρών κωδικών",
+            "Ειδοποιήσεις λήξης credentials",
+            "Secure sharing ανά τμήμα",
+            "Audit trail σε κάθε ανάκτηση",
+          ],
+        },
+        {
+          name: "SolAssets",
+          tagline: "Εξοπλισμός, άδειες, διαδικασίες",
+          description:
+            "Πλήρης διαχείριση εξοπλισμού και αδειών λογισμικού: hardware inventory με serial numbers, αυτόματα alerts λήξης αδειών, handover workflows με υπογραφές, και XLSX reports.",
+          features: [
+            "Διαχείριση αδειών λογισμικού με assignment σε assets",
+            "Αυτόματα alerts λήξης αδειών (30 ημέρες)",
+            "Hardware inventory με serial number & asset tag",
+            "Onboarding/offboarding με signature tracking",
+            "Asset lifecycle: αγορά, εγγύηση, κατάσταση",
+            "Reports & XLSX exports",
+          ],
+        },
+        {
+          name: "SolIt",
+          tagline: "Υποδομή και καθημερινά IT tasks",
+          description:
+            "Monthly system & DB checks σε checklist format, real-time InfraHealth monitoring με DNS/TCP, task management με priorities, και color-coded compliance dashboard ανά πελάτη.",
+          features: [
+            "Monthly system & DB checks σε checklist",
+            "InfraHealth: real-time DNS/TCP monitoring",
+            "IT task management με priorities & status",
+            "Color-coded compliance dashboard",
+            "Overdue tracking (multi-month lookback)",
+            "Full-text search σε notes & reports",
+          ],
+        },
+      ],
+      featuresHeading: "Λειτουργίες σε όλο το Suite",
+      featuresIntro: "Cross-cutting capabilities που τρέχουν σε όλα τα modules.",
+      features: [
+        { title: "Πελατολόγιο", description: "Διαχείριση πελατών με στοιχεία επικοινωνίας και τοποθεσία, διασύνδεση σε όλα τα modules." },
+        { title: "Active Directory integration", description: "AD groups ελέγχουν πρόσβαση ανά module και ανά λειτουργία (π.χ. SolAssets Reports, SolPass). Granular per-user access." },
+        { title: "Οργανόγραμμα", description: "Οπτικοποίηση ιεραρχίας τμημάτων και χρηστών, με Excel export." },
+        { title: "Smart Notifications", description: "Συγκεντρωτικά alerts λήξεων credentials και αδειών λογισμικού σε ένα σημείο." },
+        { title: "Global Audit", description: "Πλήρης καταγραφή κρίσιμων ενεργειών σε όλο το σύστημα." },
+        { title: "Sessions", description: "Ενεργά sessions με IP/OS/browser, και δυνατότητα force logout." },
+        { title: "Admin Settings", description: "Maintenance mode, banner announcements, idle timeout, soft-delete restore." },
+        { title: "Help & Changelog", description: "Εσωτερική τεκμηρίωση και ιστορικό εκδόσεων." },
+        { title: "Δίγλωσσο UI", description: "Πλήρης υποστήριξη ελληνικών και αγγλικών." },
+      ],
+      stackHeading: "Τεχνολογία",
+      stack: ["ASP.NET Core", "SQL Server", "Active Directory / LDAP", "MVC + Razor"],
+      cta: {
+        title: "Θέλετε να δείτε το SolSuite στην πράξη;",
+        subtitle:
+          "Ζητήστε μια παρουσίαση και θα σας δείξουμε πώς λειτουργεί στο δικό σας περιβάλλον.",
+        button: "Ζητήστε παρουσίαση",
+      },
+    },
+
     about: {
       metaTitle: "Σχετικά | SolSystems",
       metaDescription:
@@ -157,7 +297,7 @@ export const strings = {
         title: "Η Προσέγγισή μας",
         steps: [
           "Βαθιά κατανόηση: μαθαίνουμε την επιχείρησή σας πριν αγγίξουμε κώδικα",
-          "Αρχιτεκτονική σαφήνεια: σχεδιάζουμε πριν χτίσουμε, πάντα",
+          "Αρχιτεκτονική σαφήνεια: σχεδιάζουμε πριν υλοποιήσουμε, πάντα",
           "Σταδιακή παράδοση: εβδομαδιαίες παρουσιάσεις προόδου",
           "Μεταφορά γνώσης: η ομάδα σας έχει την κυριότητα της λύσης όταν τελειώσουμε",
         ],
@@ -235,7 +375,7 @@ export const strings = {
 
     footer: {
       tagline:
-        "Λύσεις πληροφορικής για επιχειρήσεις που οδηγούν τον μετασχηματισμό. Σχεδιάζουμε, χτίζουμε και κλιμακώνουμε τεχνολογία για οργανισμούς με όραμα.",
+        "Λύσεις πληροφορικής για επιχειρήσεις που οδηγούν τον μετασχηματισμό. Σχεδιάζουμε, αναπτύσσουμε και κλιμακώνουμε τεχνολογία για οργανισμούς με όραμα.",
       navigationHeading: "Πλοήγηση",
       contactHeading: "Επικοινωνία",
       locationValue: "Αθήνα, Ελλάδα",
@@ -261,6 +401,7 @@ export const strings = {
     nav: [
       { key: "home", label: "Home" },
       { key: "services", label: "Services" },
+      { key: "products", label: "Products" },
       { key: "about", label: "About" },
       { key: "contact", label: "Contact" },
     ],
@@ -317,6 +458,30 @@ export const strings = {
           },
         ],
         viewAll: "View All Services",
+      },
+      products: {
+        eyebrow: "Our Apps",
+        titleLine1: "Ready-made solutions",
+        titleLine2: "we've built",
+        intro: "We don't only build custom solutions. We've also developed our own applications that solve specific IT problems.",
+        learnMore: "Learn more",
+        viewAll: "View all products",
+        list: [
+          {
+            name: "SolSuite",
+            tagline: "Comprehensive IT management system",
+            description:
+              "Three modules in one: SolPass for credential management, SolAssets for equipment and licenses, SolIt for infrastructure monitoring and daily IT tasks.",
+            stack: ["ASP.NET Core", "SQL Server", "Active Directory / LDAP"],
+          },
+          {
+            name: "SolStatus",
+            tagline: "Internal IT status page",
+            description:
+              "Real-time system status monitoring with role-based access control.",
+            stack: ["ASP.NET Core", "AD-integrated auth"],
+          },
+        ],
       },
       whyUs: {
         eyebrow: "Why SolSystems",
@@ -388,6 +553,119 @@ export const strings = {
         title: "Not sure what you need?",
         subtitle: "Book a free discovery call. We will assess your current setup and recommend the right approach.",
         button: "Book a Discovery Call",
+      },
+    },
+
+    productsListing: {
+      metaTitle: "Products | SolSystems",
+      metaDescription:
+        "Our own applications for IT operations: SolSuite (credentials, equipment, infrastructure) and SolStatus (status page).",
+      eyebrow: "Products",
+      titleLine1: "Our own products",
+      titleLine2: "for IT operations",
+      intro:
+        "We don't only build custom solutions. We've also developed our own applications that solve specific IT operational problems.",
+      items: [
+        {
+          name: "SolSuite",
+          tagline: "Comprehensive IT management system",
+          description:
+            "Three modules unified: SolPass (credential management), SolAssets (equipment & licenses), SolIt (infrastructure & daily tasks).",
+          hasDetail: true,
+          learnMore: "Learn more",
+        },
+        {
+          name: "SolStatus",
+          tagline: "Internal IT status page",
+          description: "Real-time system status monitoring with role-based access control.",
+          hasDetail: false,
+          learnMore: "",
+        },
+      ],
+      cta: {
+        title: "Interested in any of these?",
+        subtitle: "Get in touch for a demo or to discuss customization for your environment.",
+        button: "Get in Touch",
+      },
+    },
+
+    solsuite: {
+      metaTitle: "SolSuite: IT Management System | SolSystems",
+      metaDescription:
+        "Comprehensive IT management system for businesses: credential management (SolPass), equipment and licenses (SolAssets), and infrastructure (SolIt).",
+      breadcrumbHome: "Home",
+      breadcrumbProducts: "Products",
+      eyebrow: "Product",
+      title: "SolSuite",
+      tagline: "Comprehensive IT management system",
+      intro:
+        "SolSuite unifies into a single tool everything an IT team needs: secure credential management, equipment and license tracking, and infrastructure monitoring. Built for enterprise environments with Active Directory integration and full audit logging.",
+      modulesHeading: "Three modules. One platform.",
+      modulesIntro:
+        "Modular architecture with granular AD-based access control. Each installation enables only the modules it needs, and each user sees only the modules and sub-features they've been granted.",
+      modules: [
+        {
+          name: "SolPass",
+          tagline: "Credential management",
+          description:
+            "Encrypted shared vault with role-based access, a separate personal vault per user, built-in password generator, and expiry notifications. Full audit log on every retrieval.",
+          features: [
+            "Encrypted shared vault with role-based access",
+            "Personal Vault with master password",
+            "SolGen: strong password generator",
+            "Credential expiry notifications",
+            "Secure sharing by department",
+            "Audit trail on every retrieval",
+          ],
+        },
+        {
+          name: "SolAssets",
+          tagline: "Equipment, licenses, procedures",
+          description:
+            "Full equipment and software-license management: hardware inventory with serial numbers, automatic license expiry alerts, handover workflows with signatures, and XLSX reports.",
+          features: [
+            "Software license management with asset assignment",
+            "Automatic license expiry alerts (30 days)",
+            "Hardware inventory with serial number & asset tag",
+            "Onboarding/offboarding with signature tracking",
+            "Asset lifecycle: purchase, warranty, status",
+            "Reports & XLSX exports",
+          ],
+        },
+        {
+          name: "SolIt",
+          tagline: "Infrastructure & daily IT tasks",
+          description:
+            "Monthly system & DB checks in checklist format, real-time InfraHealth monitoring via DNS/TCP probes, task management with priorities, and a color-coded compliance dashboard per customer.",
+          features: [
+            "Monthly system & DB checks in checklist",
+            "InfraHealth: real-time DNS/TCP monitoring",
+            "IT task management with priorities & status",
+            "Color-coded compliance dashboard",
+            "Overdue tracking (multi-month lookback)",
+            "Full-text search across notes & reports",
+          ],
+        },
+      ],
+      featuresHeading: "Across the whole Suite",
+      featuresIntro: "Cross-cutting capabilities that run in every module.",
+      features: [
+        { title: "Customers", description: "Customer management with contact and location details, linked across all modules." },
+        { title: "Active Directory integration", description: "AD groups control access per module and per sub-feature (e.g. SolAssets Reports, SolPass). Granular per-user access." },
+        { title: "Organogram", description: "Visual hierarchy of departments and users, with Excel export." },
+        { title: "Smart Notifications", description: "Aggregated alerts for expiring credentials and software licenses in one place." },
+        { title: "Global Audit", description: "Complete logging of critical actions across the entire system." },
+        { title: "Sessions", description: "Active sessions with IP/OS/browser detection and force-logout." },
+        { title: "Admin Settings", description: "Maintenance mode, banner announcements, idle timeout, soft-delete restore." },
+        { title: "Help & Changelog", description: "Built-in documentation and version history." },
+        { title: "Bilingual UI", description: "Full Greek and English language support." },
+      ],
+      stackHeading: "Technology",
+      stack: ["ASP.NET Core", "SQL Server", "Active Directory / LDAP", "MVC + Razor"],
+      cta: {
+        title: "Want to see SolSuite in action?",
+        subtitle: "Request a demo and we'll show you how it works in your environment.",
+        button: "Request a demo",
       },
     },
 

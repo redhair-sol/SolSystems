@@ -9,11 +9,15 @@ import {
   Users,
   Clock,
   Zap,
+  Layers,
+  Activity,
 } from "lucide-react";
 import { useLocale, useT, localizedHref } from "../../i18n/locale";
 
 const serviceIcons = [Cloud, Code2, Shield, Database];
 const whyUsIcons = [Users, Clock, Zap];
+const productIcons = [Layers, Activity];
+const productDetailKeys = ["solsuite", null] as const;
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
@@ -171,7 +175,7 @@ export function HomePage() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: i * 0.1, duration: 0.5 }}
-                  className="group rounded-2xl border border-border/60 bg-card p-6 transition-all hover:border-primary/30 hover:bg-surface-elevated"
+                  className="group rounded-2xl border border-border/60 bg-card p-6 transition-all duration-200 hover:-translate-y-1 hover:border-primary/30 hover:bg-surface-elevated hover:shadow-xl hover:shadow-primary/10"
                 >
                   <div className="mb-4 inline-flex rounded-xl bg-primary/10 p-3 text-primary">
                     <Icon size={24} />
@@ -194,6 +198,83 @@ export function HomePage() {
               className="group inline-flex items-center gap-2 rounded-lg border border-primary/30 px-6 py-3 text-sm font-semibold text-primary transition-all hover:bg-primary/10"
             >
               {home.whatWeDo.viewAll}
+              <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
+            </Link>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* OUR PRODUCTS */}
+      <section className="border-t border-border/40 py-24 sm:py-32">
+        <div className="mx-auto max-w-7xl px-6">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="mb-16 max-w-2xl"
+          >
+            <span className="text-sm font-semibold uppercase tracking-wider text-primary">{home.products.eyebrow}</span>
+            <h2 className="mt-3 text-4xl font-bold tracking-tight sm:text-5xl" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
+              {home.products.titleLine1}
+              <br />
+              {home.products.titleLine2}
+            </h2>
+            <p className="mt-6 text-muted-foreground">{home.products.intro}</p>
+          </motion.div>
+
+          <div className="grid gap-6 md:grid-cols-2">
+            {home.products.list.map((product, i) => {
+              const Icon = productIcons[i];
+              const detailKey = productDetailKeys[i];
+              return (
+                <motion.div
+                  key={product.name}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: i * 0.1, duration: 0.5 }}
+                  className="group flex flex-col rounded-2xl border border-border/60 bg-card p-8 transition-all duration-200 hover:-translate-y-1 hover:border-primary/30 hover:bg-surface-elevated hover:shadow-xl hover:shadow-primary/10"
+                >
+                  <div className="mb-5 inline-flex w-fit rounded-xl bg-primary/10 p-3 text-primary">
+                    <Icon size={28} />
+                  </div>
+                  <h3 className="text-2xl font-bold text-card-foreground" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
+                    {product.name}
+                  </h3>
+                  <p className="mt-1 text-sm font-medium text-primary">{product.tagline}</p>
+                  <p className="mt-4 flex-1 text-sm leading-relaxed text-muted-foreground">{product.description}</p>
+                  <div className="mt-6 flex flex-wrap gap-2">
+                    {product.stack.map((tech) => (
+                      <span key={tech} className="rounded-md border border-border/60 bg-surface px-2.5 py-1 text-xs text-muted-foreground">
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                  {detailKey && (
+                    <Link
+                      to={localizedHref(locale, detailKey)}
+                      className="mt-6 inline-flex w-fit items-center gap-1 text-sm font-semibold text-primary transition-colors hover:text-primary/80"
+                    >
+                      {home.products.learnMore}
+                      <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
+                    </Link>
+                  )}
+                </motion.div>
+              );
+            })}
+          </div>
+
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            className="mt-12 text-center"
+          >
+            <Link
+              to={localizedHref(locale, "products")}
+              className="group inline-flex items-center gap-2 rounded-lg border border-primary/30 px-6 py-3 text-sm font-semibold text-primary transition-all hover:bg-primary/10"
+            >
+              {home.products.viewAll}
               <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
             </Link>
           </motion.div>
@@ -227,7 +308,7 @@ export function HomePage() {
               {home.whyUs.items.map((item, i) => {
                 const Icon = whyUsIcons[i];
                 return (
-                  <div key={item.title} className="flex gap-4 rounded-xl border border-border/60 bg-card p-5">
+                  <div key={item.title} className="flex gap-4 rounded-xl border border-border/60 bg-card p-5 transition-all duration-200 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lg hover:shadow-primary/10">
                     <div className="shrink-0 rounded-lg bg-primary/10 p-2.5 text-primary">
                       <Icon size={22} />
                     </div>

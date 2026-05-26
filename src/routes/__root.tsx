@@ -21,6 +21,17 @@ function NotFoundComponent() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
       <div className="max-w-md text-center">
+        <picture>
+          <source type="image/webp" srcSet="/images/logo.webp" />
+          <img
+            src="/images/logo-opt.png"
+            alt="SolSystems"
+            className="mx-auto mb-8 h-12 w-auto"
+            width={600}
+            height={273}
+            decoding="async"
+          />
+        </picture>
         <h1 className="text-7xl font-bold text-foreground">404</h1>
         <h2 className="mt-4 text-xl font-semibold text-foreground">{t.heading}</h2>
         <p className="mt-2 text-sm text-muted-foreground">{t.subtitle}</p>
@@ -45,6 +56,17 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
       <div className="max-w-md text-center">
+        <picture>
+          <source type="image/webp" srcSet="/images/logo.webp" />
+          <img
+            src="/images/logo-opt.png"
+            alt="SolSystems"
+            className="mx-auto mb-8 h-12 w-auto"
+            width={600}
+            height={273}
+            decoding="async"
+          />
+        </picture>
         <h1 className="text-xl font-semibold tracking-tight text-foreground">{t.heading}</h1>
         <p className="mt-2 text-sm text-muted-foreground">{t.subtitle}</p>
         <div className="mt-6 flex flex-wrap justify-center gap-2">
@@ -76,10 +98,22 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "SolSystems" },
+      { property: "og:image", content: `${SITE_URL}/og-image.png` },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
+      { property: "og:image:alt", content: "SolSystems" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:image", content: `${SITE_URL}/og-image.png` },
+      { name: "theme-color", content: "#000000" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
+      { rel: "icon", href: "/favicon.ico", sizes: "any" },
+      { rel: "icon", type: "image/png", sizes: "16x16", href: "/favicon-16.png" },
+      { rel: "icon", type: "image/png", sizes: "32x32", href: "/favicon-32.png" },
+      { rel: "icon", type: "image/png", sizes: "192x192", href: "/favicon-192.png" },
+      { rel: "apple-touch-icon", sizes: "180x180", href: "/favicon-180.png" },
+      { rel: "manifest", href: "/manifest.webmanifest" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {

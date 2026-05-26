@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { Mail, MapPin, ArrowUpRight } from "lucide-react";
 import { useLocale, useT, localizedHref, type PageKey } from "../i18n/locale";
 
-const pageKeys: PageKey[] = ["home", "services", "about", "contact"];
+const pageKeys: PageKey[] = ["home", "services", "products", "about", "contact"];
 
 export function Footer() {
   const locale = useLocale();
@@ -13,8 +13,13 @@ export function Footer() {
   }));
 
   return (
-    <footer className="border-t border-border/40 bg-background">
-      <div className="mx-auto max-w-7xl px-6 py-16">
+    <footer className="relative overflow-hidden border-t border-border/40 bg-background">
+      {/* Subtle green radial glow — atmospheric, matches SolSystems brand accent */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_0%_60%,rgba(16,185,129,0.10),transparent_55%)]"
+      />
+      <div className="relative mx-auto max-w-7xl px-6 py-16">
         <div className="grid gap-12 md:grid-cols-4">
           <div className="md:col-span-2">
             <picture>
@@ -22,7 +27,7 @@ export function Footer() {
               <img
                 src="/images/logo-opt.png"
                 alt="SolSystems"
-                className="h-10 w-auto mix-blend-screen"
+                className="h-10 w-auto"
                 width={600}
                 height={273}
                 decoding="async"
@@ -63,7 +68,13 @@ export function Footer() {
         </div>
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-border/40 pt-8 sm:flex-row">
-          <p className="text-xs text-muted-foreground">{t.footer.copyright(new Date().getFullYear())}</p>
+          <p className="inline-flex items-center gap-2 text-xs text-muted-foreground">
+            <span className="relative flex h-2 w-2">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75" />
+              <span className="relative inline-flex h-2 w-2 rounded-full bg-primary" />
+            </span>
+            {t.footer.copyright(new Date().getFullYear())}
+          </p>
           <p className="inline-flex items-baseline gap-1.5 text-xs text-muted-foreground">
             <span>{t.footer.designBy}</span>
             <a

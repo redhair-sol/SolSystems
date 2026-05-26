@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Menu, X, Globe } from "lucide-react";
 import { useLocale, useT, localizedHref, alternateUrl, type PageKey } from "../i18n/locale";
 
-const pageKeys: PageKey[] = ["home", "services", "about", "contact"];
+const pageKeys: PageKey[] = ["home", "services", "products", "about", "contact"];
 
 export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -26,7 +26,7 @@ export function Header() {
             <img
               src="/images/logo-opt.png"
               alt="SolSystems"
-              className="h-10 w-auto mix-blend-screen"
+              className="h-10 w-auto"
               width={600}
               height={273}
               decoding="async"
