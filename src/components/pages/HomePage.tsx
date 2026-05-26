@@ -4,7 +4,7 @@ import {
   Shield,
   Cloud,
   Code2,
-  Database,
+  Server,
   ArrowRight,
   Users,
   Clock,
@@ -14,7 +14,7 @@ import {
 } from "lucide-react";
 import { useLocale, useT, localizedHref } from "../../i18n/locale";
 
-const serviceIcons = [Cloud, Code2, Shield, Database];
+const serviceIcons = [Cloud, Server, Shield, Code2];
 const whyUsIcons = [Users, Clock, Zap];
 const productIcons = [Layers, Activity];
 const productDetailKeys = ["solsuite", null] as const;

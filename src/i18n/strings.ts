@@ -44,9 +44,9 @@ export const strings = {
               "Επεκτάσιμη υποδομή cloud σε AWS, Azure και GCP, με ασφάλεια εταιρικού επιπέδου και 99.99% διαθεσιμότητα.",
           },
           {
-            title: "Εξατομικευμένη Ανάπτυξη",
+            title: "Υποδομές IT",
             description:
-              "Εξατομικευμένες λύσεις λογισμικού με σύγχρονα πλαίσια ανάπτυξης. Από διαδικτυακές εφαρμογές μέχρι εταιρικά συστήματα.",
+              "Ολοκληρωμένη διαχείριση δικτύου και εξοπλισμού, από τον σχεδιασμό μέχρι την προμήθεια και τη συντήρηση.",
           },
           {
             title: "Κυβερνοασφάλεια",
@@ -54,9 +54,9 @@ export const strings = {
               "Ολοκληρωμένοι έλεγχοι ασφαλείας, δοκιμές διείσδυσης και πλαίσια συμμόρφωσης για τον οργανισμό σας.",
           },
           {
-            title: "Μηχανική Δεδομένων",
+            title: "Εξατομικευμένη Ανάπτυξη",
             description:
-              "Αγωγοί δεδομένων, αποθήκες δεδομένων και πλατφόρμες ανάλυσης που μετατρέπουν τα δεδομένα σε αποφάσεις.",
+              "Εξατομικευμένες λύσεις λογισμικού με σύγχρονα πλαίσια ανάπτυξης. Από διαδικτυακές εφαρμογές μέχρι εταιρικά συστήματα.",
           },
         ],
         viewAll: "Όλες οι υπηρεσίες μας",
@@ -442,9 +442,9 @@ export const strings = {
               "Scalable cloud infrastructure on AWS, Azure, and GCP with enterprise-grade security and 99.99% uptime.",
           },
           {
-            title: "Custom Development",
+            title: "IT Infrastructure",
             description:
-              "Bespoke software solutions built with modern frameworks. From web apps to enterprise systems.",
+              "End-to-end management of network and equipment, from design to procurement and maintenance.",
           },
           {
             title: "Cybersecurity",
@@ -452,9 +452,9 @@ export const strings = {
               "End-to-end security audits, penetration testing, and compliance frameworks for your organization.",
           },
           {
-            title: "Data Engineering",
+            title: "Custom Development",
             description:
-              "Data pipelines, warehousing, and analytics platforms that turn raw data into actionable intelligence.",
+              "Bespoke software solutions built with modern frameworks. From web apps to enterprise systems.",
           },
         ],
         viewAll: "View All Services",
