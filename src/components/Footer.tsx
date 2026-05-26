@@ -14,10 +14,15 @@ export function Footer() {
 
   return (
     <footer className="relative overflow-hidden border-t border-border/40 bg-background">
-      {/* Subtle green radial glow — atmospheric, matches SolSystems brand accent */}
+      {/* Top horizontal accent line — soft green gradient marking the section break */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_0%_60%,rgba(16,185,129,0.10),transparent_55%)]"
+        className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-primary/70 to-transparent"
+      />
+      {/* Wide green radial glow — atmospheric brand presence, matches redhair.gr scale */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_70%_90%_at_10%_60%,rgba(16,185,129,0.20)_0%,transparent_65%)]"
       />
       <div className="relative mx-auto max-w-7xl px-6 py-16">
         <div className="grid gap-12 md:grid-cols-4">

@@ -149,6 +149,7 @@ function RootShell({ children }: { children: React.ReactNode }) {
         <link rel="alternate" hrefLang="x-default" href={`${SITE_URL}${locale === "el" ? pathname : altPath}`} />
       </head>
       <body>
+        <div className="noise-overlay" aria-hidden="true" />
         {children}
         <Scripts />
       </body>
