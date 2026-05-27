@@ -14,7 +14,7 @@ export function useT() {
   return strings[useLocale()];
 }
 
-export type PageKey = "home" | "services" | "products" | "solsuite" | "about" | "contact";
+export type PageKey = "home" | "services" | "products" | "solsuite" | "solstatus" | "about" | "contact";
 
 export function localizedHref(locale: Locale, page: PageKey): string {
   const prefix = locale === "el" ? "" : "/en";
@@ -27,6 +27,8 @@ export function localizedHref(locale: Locale, page: PageKey): string {
       return `${prefix}/products`;
     case "solsuite":
       return `${prefix}/products/solsuite`;
+    case "solstatus":
+      return `${prefix}/products/solstatus`;
     case "about":
       return `${prefix}/about`;
     case "contact":

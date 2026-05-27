@@ -14,6 +14,7 @@ const pages: Array<{
   { paths: { el: "/services", en: "/en/services" }, changefreq: "weekly", priority: "0.8" },
   { paths: { el: "/products", en: "/en/products" }, changefreq: "weekly", priority: "0.9" },
   { paths: { el: "/products/solsuite", en: "/en/products/solsuite" }, changefreq: "monthly", priority: "0.8" },
+  { paths: { el: "/products/solstatus", en: "/en/products/solstatus" }, changefreq: "monthly", priority: "0.8" },
   { paths: { el: "/about", en: "/en/about" }, changefreq: "monthly", priority: "0.7" },
   { paths: { el: "/contact", en: "/en/contact" }, changefreq: "monthly", priority: "0.7" },
 ];

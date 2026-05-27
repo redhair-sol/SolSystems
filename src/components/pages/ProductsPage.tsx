@@ -4,7 +4,7 @@ import { Layers, Activity, ArrowRight } from "lucide-react";
 import { useLocale, useT, localizedHref } from "../../i18n/locale";
 
 const productIcons = [Layers, Activity];
-const productHrefs = ["solsuite", null] as const;
+const productHrefs = ["solsuite", "solstatus"] as const;
 
 export function ProductsPage() {
   const locale = useLocale();

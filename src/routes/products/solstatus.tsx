@@ -2,9 +2,9 @@ import { createFileRoute } from "@tanstack/react-router";
 import { ProductDetailPage } from "../../components/pages/ProductDetailPage";
 import { strings } from "../../i18n/strings";
 
-const t = strings.el.solsuite;
+const t = strings.el.solstatus;
 
-export const Route = createFileRoute("/products/solsuite")({
+export const Route = createFileRoute("/products/solstatus")({
   head: () => ({
     meta: [
       { title: t.metaTitle },
@@ -13,5 +13,5 @@ export const Route = createFileRoute("/products/solsuite")({
       { property: "og:description", content: t.metaDescription },
     ],
   }),
-  component: () => <ProductDetailPage productKey="solsuite" />,
+  component: () => <ProductDetailPage productKey="solstatus" />,
 });

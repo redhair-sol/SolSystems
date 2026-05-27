@@ -17,11 +17,13 @@ import { Route as IndexRouteImport } from './routes/index'
 import { Route as ProductsIndexRouteImport } from './routes/products/index'
 import { Route as EnIndexRouteImport } from './routes/en/index'
 import { Route as ProductsSolsuiteRouteImport } from './routes/products/solsuite'
+import { Route as ProductsSolstatusRouteImport } from './routes/products/solstatus'
 import { Route as EnServicesRouteImport } from './routes/en/services'
 import { Route as EnContactRouteImport } from './routes/en/contact'
 import { Route as EnAboutRouteImport } from './routes/en/about'
 import { Route as EnProductsIndexRouteImport } from './routes/en/products/index'
 import { Route as EnProductsSolsuiteRouteImport } from './routes/en/products/solsuite'
+import { Route as EnProductsSolstatusRouteImport } from './routes/en/products/solstatus'
 
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   id: '/sitemap.xml',
@@ -63,6 +65,11 @@ const ProductsSolsuiteRoute = ProductsSolsuiteRouteImport.update({
   path: '/products/solsuite',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ProductsSolstatusRoute = ProductsSolstatusRouteImport.update({
+  id: '/products/solstatus',
+  path: '/products/solstatus',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const EnServicesRoute = EnServicesRouteImport.update({
   id: '/en/services',
   path: '/en/services',
@@ -88,6 +95,11 @@ const EnProductsSolsuiteRoute = EnProductsSolsuiteRouteImport.update({
   path: '/en/products/solsuite',
   getParentRoute: () => rootRouteImport,
 } as any)
+const EnProductsSolstatusRoute = EnProductsSolstatusRouteImport.update({
+  id: '/en/products/solstatus',
+  path: '/en/products/solstatus',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -98,9 +110,11 @@ export interface FileRoutesByFullPath {
   '/en/about': typeof EnAboutRoute
   '/en/contact': typeof EnContactRoute
   '/en/services': typeof EnServicesRoute
+  '/products/solstatus': typeof ProductsSolstatusRoute
   '/products/solsuite': typeof ProductsSolsuiteRoute
   '/en/': typeof EnIndexRoute
   '/products/': typeof ProductsIndexRoute
+  '/en/products/solstatus': typeof EnProductsSolstatusRoute
   '/en/products/solsuite': typeof EnProductsSolsuiteRoute
   '/en/products/': typeof EnProductsIndexRoute
 }
@@ -113,9 +127,11 @@ export interface FileRoutesByTo {
   '/en/about': typeof EnAboutRoute
   '/en/contact': typeof EnContactRoute
   '/en/services': typeof EnServicesRoute
+  '/products/solstatus': typeof ProductsSolstatusRoute
   '/products/solsuite': typeof ProductsSolsuiteRoute
   '/en': typeof EnIndexRoute
   '/products': typeof ProductsIndexRoute
+  '/en/products/solstatus': typeof EnProductsSolstatusRoute
   '/en/products/solsuite': typeof EnProductsSolsuiteRoute
   '/en/products': typeof EnProductsIndexRoute
 }
@@ -129,9 +145,11 @@ export interface FileRoutesById {
   '/en/about': typeof EnAboutRoute
   '/en/contact': typeof EnContactRoute
   '/en/services': typeof EnServicesRoute
+  '/products/solstatus': typeof ProductsSolstatusRoute
   '/products/solsuite': typeof ProductsSolsuiteRoute
   '/en/': typeof EnIndexRoute
   '/products/': typeof ProductsIndexRoute
+  '/en/products/solstatus': typeof EnProductsSolstatusRoute
   '/en/products/solsuite': typeof EnProductsSolsuiteRoute
   '/en/products/': typeof EnProductsIndexRoute
 }
@@ -146,9 +164,11 @@ export interface FileRouteTypes {
     | '/en/about'
     | '/en/contact'
     | '/en/services'
+    | '/products/solstatus'
     | '/products/solsuite'
     | '/en/'
     | '/products/'
+    | '/en/products/solstatus'
     | '/en/products/solsuite'
     | '/en/products/'
   fileRoutesByTo: FileRoutesByTo
@@ -161,9 +181,11 @@ export interface FileRouteTypes {
     | '/en/about'
     | '/en/contact'
     | '/en/services'
+    | '/products/solstatus'
     | '/products/solsuite'
     | '/en'
     | '/products'
+    | '/en/products/solstatus'
     | '/en/products/solsuite'
     | '/en/products'
   id:
@@ -176,9 +198,11 @@ export interface FileRouteTypes {
     | '/en/about'
     | '/en/contact'
     | '/en/services'
+    | '/products/solstatus'
     | '/products/solsuite'
     | '/en/'
     | '/products/'
+    | '/en/products/solstatus'
     | '/en/products/solsuite'
     | '/en/products/'
   fileRoutesById: FileRoutesById
@@ -192,9 +216,11 @@ export interface RootRouteChildren {
   EnAboutRoute: typeof EnAboutRoute
   EnContactRoute: typeof EnContactRoute
   EnServicesRoute: typeof EnServicesRoute
+  ProductsSolstatusRoute: typeof ProductsSolstatusRoute
   ProductsSolsuiteRoute: typeof ProductsSolsuiteRoute
   EnIndexRoute: typeof EnIndexRoute
   ProductsIndexRoute: typeof ProductsIndexRoute
+  EnProductsSolstatusRoute: typeof EnProductsSolstatusRoute
   EnProductsSolsuiteRoute: typeof EnProductsSolsuiteRoute
   EnProductsIndexRoute: typeof EnProductsIndexRoute
 }
@@ -257,6 +283,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ProductsSolsuiteRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/products/solstatus': {
+      id: '/products/solstatus'
+      path: '/products/solstatus'
+      fullPath: '/products/solstatus'
+      preLoaderRoute: typeof ProductsSolstatusRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/en/services': {
       id: '/en/services'
       path: '/en/services'
@@ -292,6 +325,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof EnProductsSolsuiteRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/en/products/solstatus': {
+      id: '/en/products/solstatus'
+      path: '/en/products/solstatus'
+      fullPath: '/en/products/solstatus'
+      preLoaderRoute: typeof EnProductsSolstatusRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -304,9 +344,11 @@ const rootRouteChildren: RootRouteChildren = {
   EnAboutRoute: EnAboutRoute,
   EnContactRoute: EnContactRoute,
   EnServicesRoute: EnServicesRoute,
+  ProductsSolstatusRoute: ProductsSolstatusRoute,
   ProductsSolsuiteRoute: ProductsSolsuiteRoute,
   EnIndexRoute: EnIndexRoute,
   ProductsIndexRoute: ProductsIndexRoute,
+  EnProductsSolstatusRoute: EnProductsSolstatusRoute,
   EnProductsSolsuiteRoute: EnProductsSolsuiteRoute,
   EnProductsIndexRoute: EnProductsIndexRoute,
 }

@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { SolSuitePage } from "../../../components/pages/SolSuitePage";
+import { ProductDetailPage } from "../../../components/pages/ProductDetailPage";
 import { strings } from "../../../i18n/strings";
 
 const t = strings.en.solsuite;
@@ -13,5 +13,5 @@ export const Route = createFileRoute("/en/products/solsuite")({
       { property: "og:description", content: t.metaDescription },
     ],
   }),
-  component: SolSuitePage,
+  component: () => <ProductDetailPage productKey="solsuite" />,
 });

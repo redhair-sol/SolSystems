@@ -162,7 +162,7 @@ export const strings = {
         },
       ],
       cta: {
-        title: "Δεν είστε σίγουροι τι χρειάζεστε;",
+        title: "Ας βρούμε μαζί τι χρειάζεστε.",
         subtitle:
           "Κλείστε μια δωρεάν συνάντηση γνωριμίας. Θα αξιολογήσουμε την υπάρχουσα δομή σας και θα προτείνουμε τη σωστή προσέγγιση.",
         button: "Κλείστε συνάντηση γνωριμίας",
@@ -183,22 +183,22 @@ export const strings = {
           name: "SolSuite",
           tagline: "Ολοκληρωμένο σύστημα διαχείρισης IT",
           description:
-            "Τρεις ενότητες ενοποιημένες: SolPass (κωδικοί), SolAssets (εξοπλισμός & άδειες), SolIt (υποδομή & καθημερινές εργασίες).",
+            "Ολοκληρωμένο σύστημα διαχείρισης IT σε τρεις ενότητες: SolPass για ασφαλή διαχείριση κωδικών, SolAssets για εξοπλισμό και άδειες λογισμικού, και SolIt για την υποδομή και τις καθημερινές εργασίες. Ενσωματώνεται με το Active Directory, κρατά πλήρη καταγραφή ενεργειών και τρέχει στη δική σας υποδομή, ώστε τα δεδομένα να παραμένουν υπό τον έλεγχό σας.",
           hasDetail: true,
           learnMore: "Μάθετε περισσότερα",
         },
         {
           name: "SolStatus",
-          tagline: "Status page εσωτερικών IT υπηρεσιών",
+          tagline: "Σελίδα κατάστασης IT υπηρεσιών",
           description:
-            "Παρακολούθηση κατάστασης συστημάτων σε πραγματικό χρόνο, με πρόσβαση βάσει ρόλων.",
-          hasDetail: false,
-          learnMore: "",
+            "Εσωτερική σελίδα κατάστασης για τις IT υπηρεσίες σας: ενεργές βλάβες, τρέχουσες εργασίες και προγραμματισμένη συντήρηση σε ένα σημείο, με ροή ενημερώσεων και διαβαθμισμένη πρόσβαση μέσω Active Directory. Τρέχει στη δική σας υποδομή, ώστε τα δεδομένα των συμβάντων να παραμένουν υπό τον έλεγχό σας.",
+          hasDetail: true,
+          learnMore: "Μάθετε περισσότερα",
         },
       ],
       cta: {
-        title: "Ενδιαφέρει κάποιο από αυτά;",
-        subtitle: "Επικοινωνήστε για παρουσίαση ή προσαρμογή στο δικό σας περιβάλλον.",
+        title: "Σας ενδιαφέρει κάποιο από αυτά;",
+        subtitle: "Επικοινωνήστε για παρουσίαση ή για να συζητήσουμε τις ανάγκες σας.",
         button: "Επικοινωνία",
       },
     },
@@ -213,7 +213,7 @@ export const strings = {
       title: "SolSuite",
       tagline: "Ολοκληρωμένο σύστημα διαχείρισης IT",
       intro:
-        "Το SolSuite ενοποιεί σε ένα εργαλείο όλα όσα χρειάζεται μια IT ομάδα: ασφαλή διαχείριση κωδικών, παρακολούθηση εξοπλισμού και αδειών, και έλεγχο υποδομής. Σχεδιασμένο για εταιρικά περιβάλλοντα με ενσωμάτωση Active Directory και πλήρη καταγραφή ενεργειών.",
+        "Το SolSuite ενοποιεί σε ένα εργαλείο όλα όσα χρειάζεται μια IT ομάδα: ασφαλή διαχείριση κωδικών, παρακολούθηση εξοπλισμού και αδειών, και έλεγχο υποδομής. Σχεδιασμένο για εταιρικά περιβάλλοντα με ενσωμάτωση Active Directory και πλήρη καταγραφή ενεργειών. Εγκαθίσταται στη δική σας υποδομή, στο data center ή στο δικό σας cloud, ώστε κωδικοί και εταιρικά δεδομένα να παραμένουν υπό τον έλεγχό σας.",
       modulesHeading: "Τρεις ενότητες. Μία πλατφόρμα.",
       modulesIntro:
         "Αρθρωτή αρχιτεκτονική με λεπτομερή έλεγχο πρόσβασης μέσω Active Directory. Κάθε εγκατάσταση ενεργοποιεί μόνο τις ενότητες που χρειάζεται, και κάθε χρήστης βλέπει μόνο τις ενότητες και τις επιμέρους λειτουργίες που του έχουν εγκριθεί.",
@@ -264,11 +264,13 @@ export const strings = {
       featuresHeading: "Λειτουργίες σε όλο το Suite",
       featuresIntro: "Οριζόντιες λειτουργίες που τρέχουν σε όλες τις ενότητες.",
       features: [
+        { title: "Στη δική σας υποδομή", description: "Τρέχει στους δικούς σας διακομιστές: στο data center ή στο δικό σας cloud. Δεν είναι συνδρομητική υπηρεσία (SaaS) και τα δεδομένα παραμένουν υπό τον έλεγχό σας." },
+        { title: "Ενσωμάτωση Active Directory", description: "Οι ομάδες AD ελέγχουν την πρόσβαση ανά ενότητα και ανά λειτουργία (π.χ. SolAssets Reports, SolPass). Υποστηρίζονται και ρόλοι μόνο-ανάγνωσης, για χρήστες που βλέπουν αναφορές χωρίς να αλλάζουν δεδομένα." },
+        { title: "Άμεση ανάκληση πρόσβασης", description: "Μόλις ένας λογαριασμός απενεργοποιηθεί ή χάσει δικαίωμα στο Active Directory, η πρόσβαση στο σύστημα κόβεται άμεσα." },
         { title: "Πελατολόγιο", description: "Διαχείριση πελατών με στοιχεία επικοινωνίας και τοποθεσία, διασύνδεση σε όλες τις ενότητες." },
-        { title: "Ενσωμάτωση Active Directory", description: "Οι ομάδες AD ελέγχουν την πρόσβαση ανά ενότητα και ανά λειτουργία (π.χ. SolAssets Reports, SolPass). Λεπτομερής πρόσβαση ανά χρήστη." },
         { title: "Οργανόγραμμα", description: "Οπτικοποίηση ιεραρχίας τμημάτων και χρηστών, με εξαγωγή σε Excel." },
         { title: "Έξυπνες Ειδοποιήσεις", description: "Συγκεντρωτικές ειδοποιήσεις λήξης στοιχείων πρόσβασης και αδειών λογισμικού σε ένα σημείο." },
-        { title: "Καθολική Καταγραφή", description: "Πλήρης καταγραφή κρίσιμων ενεργειών σε όλο το σύστημα." },
+        { title: "Καθολική Καταγραφή", description: "Πλήρης καταγραφή κρίσιμων ενεργειών, με εξαγωγή στο Windows Event Log για σύνδεση με τα εταιρικά εργαλεία παρακολούθησης." },
         { title: "Συνεδρίες", description: "Ενεργές συνεδρίες με IP/OS/browser, και δυνατότητα άμεσης αποσύνδεσης." },
         { title: "Ρυθμίσεις Διαχειριστή", description: "Κατάσταση συντήρησης, ανακοινώσεις, χρόνος αδράνειας, επαναφορά διαγραμμένων." },
         { title: "Βοήθεια & Ιστορικό", description: "Εσωτερική τεκμηρίωση και ιστορικό εκδόσεων." },
@@ -279,7 +281,76 @@ export const strings = {
       cta: {
         title: "Θέλετε να δείτε το SolSuite στην πράξη;",
         subtitle:
-          "Ζητήστε μια παρουσίαση και θα σας δείξουμε πώς λειτουργεί στο δικό σας περιβάλλον.",
+          "Ζητήστε μια παρουσίαση και θα σας το δείξουμε από κοντά.",
+        button: "Ζητήστε παρουσίαση",
+      },
+    },
+
+    solstatus: {
+      metaTitle: "SolStatus: Σελίδα Κατάστασης IT | SolSystems",
+      metaDescription:
+        "Σελίδα κατάστασης IT υπηρεσιών: ενεργές βλάβες, τρέχουσες εργασίες και προγραμματισμένη συντήρηση, με ροή ενημερώσεων και ιστορικό.",
+      breadcrumbHome: "Αρχική",
+      breadcrumbProducts: "Προϊόντα",
+      eyebrow: "Προϊόν",
+      title: "SolStatus",
+      tagline: "Σελίδα κατάστασης IT υπηρεσιών",
+      intro:
+        "Το SolStatus δίνει καθαρή εικόνα της κατάστασης των IT υπηρεσιών σε πραγματικό χρόνο: ενεργές βλάβες, τρέχουσες εργασίες και προγραμματισμένη συντήρηση, όλα σε ένα σημείο με ροή ενημερώσεων και ιστορικό. Εγκαθίσταται στη δική σας υποδομή, στο data center ή στο δικό σας cloud, ώστε τα δεδομένα των συμβάντων να παραμένουν υπό τον έλεγχό σας.",
+      modulesHeading: "Τι παρακολουθεί",
+      modulesIntro: "Τρεις τύποι καταχωρήσεων, ο καθένας με τη δική του ροή κατάστασης.",
+      modules: [
+        {
+          name: "Βλάβες",
+          tagline: "Ενεργές βλάβες σε πραγματικό χρόνο",
+          description:
+            "Καταγραφή και παρακολούθηση βλαβών με σαφή στάδια: Διερεύνηση, Εντοπίστηκε, Σε εξέλιξη, Παρακολούθηση, Επιλύθηκε. Χρωματική κωδικοποίηση ανά σοβαρότητα.",
+          features: [
+            "Στάδια από διερεύνηση έως επίλυση",
+            "Χρωματική κωδικοποίηση σοβαρότητας",
+            "Άμεση ενημέρωση χρηστών",
+          ],
+        },
+        {
+          name: "Εργασίες",
+          tagline: "Τρέχουσες εργασίες με πρόοδο",
+          description:
+            "Παρακολούθηση εργασιών που εκτελούνται σε πολλές εγκαταστάσεις, με μετρητή προόδου ανά εγκατάσταση (X/N) και συνολική εικόνα ολοκλήρωσης.",
+          features: [
+            "Πρόοδος ανά εγκατάσταση (X/N)",
+            "Συνολική εικόνα ολοκλήρωσης",
+            "Κατάσταση: σε εξέλιξη ή ολοκληρώθηκε",
+          ],
+        },
+        {
+          name: "Συντήρηση",
+          tagline: "Προγραμματισμένη συντήρηση",
+          description:
+            "Ανακοίνωση προγραμματισμένης συντήρησης με χρονικά παράθυρα, ώστε ομάδα και χρήστες να γνωρίζουν εκ των προτέρων.",
+          features: [
+            "Χρονικά παράθυρα",
+            "Προειδοποίηση εκ των προτέρων",
+            "Παρακολούθηση εξέλιξης",
+          ],
+        },
+      ],
+      featuresHeading: "Λειτουργίες",
+      featuresIntro: "Τα εργαλεία που κάνουν την κατάσταση ξεκάθαρη με μια ματιά.",
+      features: [
+        { title: "Στη δική σας υποδομή", description: "Τρέχει στους δικούς σας διακομιστές: στο data center ή στο δικό σας cloud. Δεν είναι συνδρομητική υπηρεσία (SaaS) και τα δεδομένα παραμένουν υπό τον έλεγχό σας." },
+        { title: "Σύνδεση με Active Directory", description: "Χρήστες και δικαιώματα από τους υπάρχοντες εταιρικούς λογαριασμούς, χωρίς ξεχωριστή βάση κωδικών." },
+        { title: "Διαβαθμισμένη πρόσβαση", description: "Διαφορετικά δικαιώματα για διαχείριση και για επεξεργασία ενημερώσεων, ανά χρήστη." },
+        { title: "Ιδιωτικές καταχωρήσεις", description: "Ευαίσθητα συμβάντα ορατά μόνο σε όσους έχουν δικαίωμα. Για τους υπόλοιπους είναι σαν να μην υπάρχουν." },
+        { title: "Ροή ενημερώσεων", description: "Χρονολογική ροή ενημερώσεων ανά καταχώρηση, με ένδειξη όταν μια ενημέρωση έχει διορθωθεί." },
+        { title: "Σοβαρότητα με χρώμα", description: "Τέσσερα επίπεδα (Κρίσιμη, Σημαντική, Μικρή, Πληροφοριακό) με χρωματική κωδικοποίηση για άμεση αναγνώριση." },
+        { title: "Πρόσφατο ιστορικό", description: "Επιλυμένες βλάβες και ολοκληρωμένες εργασίες παραμένουν διαθέσιμες για ανασκόπηση." },
+        { title: "Ενεργά και ιστορικό", description: "Ξεχωριστές ενότητες για ό,τι τρέχει τώρα και ό,τι έχει κλείσει." },
+      ],
+      stackHeading: "Τεχνολογία",
+      stack: ["ASP.NET Core", "SQL Server", "Active Directory / LDAP", "MVC + Razor"],
+      cta: {
+        title: "Θέλετε κάτι ανάλογο για τον οργανισμό σας;",
+        subtitle: "Ζητήστε μια παρουσίαση να το δείτε στην πράξη.",
         button: "Ζητήστε παρουσίαση",
       },
     },
@@ -550,7 +621,7 @@ export const strings = {
         },
       ],
       cta: {
-        title: "Not sure what you need?",
+        title: "Let's find what you need, together.",
         subtitle: "Book a free discovery call. We will assess your current setup and recommend the right approach.",
         button: "Book a Discovery Call",
       },
@@ -570,21 +641,22 @@ export const strings = {
           name: "SolSuite",
           tagline: "Comprehensive IT management system",
           description:
-            "Three modules unified: SolPass (credential management), SolAssets (equipment & licenses), SolIt (infrastructure & daily tasks).",
+            "A comprehensive IT management system in three modules: SolPass for secure credential management, SolAssets for equipment and software licenses, and SolIt for infrastructure and daily operations. It integrates with Active Directory, keeps a full audit log, and runs on your own infrastructure so your data stays under your control.",
           hasDetail: true,
           learnMore: "Learn more",
         },
         {
           name: "SolStatus",
           tagline: "Internal IT status page",
-          description: "Real-time system status monitoring with role-based access control.",
-          hasDetail: false,
-          learnMore: "",
+          description:
+            "An internal status page for your IT services: active incidents, ongoing work, and scheduled maintenance in one place, with an update feed and tiered access through Active Directory. It runs on your own infrastructure, so incident data stays under your control.",
+          hasDetail: true,
+          learnMore: "Learn more",
         },
       ],
       cta: {
         title: "Interested in any of these?",
-        subtitle: "Get in touch for a demo or to discuss customization for your environment.",
+        subtitle: "Get in touch for a demo or to discuss your needs.",
         button: "Get in Touch",
       },
     },
@@ -599,7 +671,7 @@ export const strings = {
       title: "SolSuite",
       tagline: "Comprehensive IT management system",
       intro:
-        "SolSuite unifies into a single tool everything an IT team needs: secure credential management, equipment and license tracking, and infrastructure monitoring. Built for enterprise environments with Active Directory integration and full audit logging.",
+        "SolSuite unifies into a single tool everything an IT team needs: secure credential management, equipment and license tracking, and infrastructure monitoring. Built for enterprise environments with Active Directory integration and full audit logging. It runs on your own infrastructure, in your data center or your own cloud, so credentials and company data stay under your control.",
       modulesHeading: "Three modules. One platform.",
       modulesIntro:
         "Modular architecture with granular AD-based access control. Each installation enables only the modules it needs, and each user sees only the modules and sub-features they've been granted.",
@@ -650,11 +722,13 @@ export const strings = {
       featuresHeading: "Across the whole Suite",
       featuresIntro: "Cross-cutting capabilities that run in every module.",
       features: [
+        { title: "Runs on your own infrastructure", description: "Runs on your own servers, in your data center or your own cloud. It isn't a subscription service (SaaS), and your data stays under your control." },
+        { title: "Active Directory integration", description: "AD groups control access per module and per sub-feature (e.g. SolAssets Reports, SolPass). Read-only roles are supported too, for users who view reports without changing data." },
+        { title: "Instant access revocation", description: "The moment an account is disabled or loses its rights in Active Directory, its access to the system is cut off immediately." },
         { title: "Customers", description: "Customer management with contact and location details, linked across all modules." },
-        { title: "Active Directory integration", description: "AD groups control access per module and per sub-feature (e.g. SolAssets Reports, SolPass). Granular per-user access." },
         { title: "Organogram", description: "Visual hierarchy of departments and users, with Excel export." },
         { title: "Smart Notifications", description: "Aggregated alerts for expiring credentials and software licenses in one place." },
-        { title: "Global Audit", description: "Complete logging of critical actions across the entire system." },
+        { title: "Global Audit", description: "Complete logging of critical actions, exported to the Windows Event Log for integration with your enterprise monitoring tools." },
         { title: "Sessions", description: "Active sessions with IP/OS/browser detection and force-logout." },
         { title: "Admin Settings", description: "Maintenance mode, banner announcements, idle timeout, soft-delete restore." },
         { title: "Help & Changelog", description: "Built-in documentation and version history." },
@@ -664,7 +738,76 @@ export const strings = {
       stack: ["ASP.NET Core", "SQL Server", "Active Directory / LDAP", "MVC + Razor"],
       cta: {
         title: "Want to see SolSuite in action?",
-        subtitle: "Request a demo and we'll show you how it works in your environment.",
+        subtitle: "Request a demo and we'll walk you through it.",
+        button: "Request a demo",
+      },
+    },
+
+    solstatus: {
+      metaTitle: "SolStatus: IT Status Page | SolSystems",
+      metaDescription:
+        "An IT services status page: active incidents, ongoing work, and scheduled maintenance, with an update feed and history.",
+      breadcrumbHome: "Home",
+      breadcrumbProducts: "Products",
+      eyebrow: "Product",
+      title: "SolStatus",
+      tagline: "IT services status page",
+      intro:
+        "SolStatus gives a clear, real-time view of your IT services status: active incidents, ongoing work, and scheduled maintenance, all in one place with an update feed and history. It runs on your own infrastructure, in your data center or your own cloud, so incident data stays under your control.",
+      modulesHeading: "What it tracks",
+      modulesIntro: "Three entry types, each with its own status flow.",
+      modules: [
+        {
+          name: "Incidents",
+          tagline: "Active incidents in real time",
+          description:
+            "Log and track incidents through clear stages: Investigating, Identified, In Progress, Monitoring, Resolved. Color-coded by severity.",
+          features: [
+            "Stages from investigation to resolution",
+            "Severity color coding",
+            "Instant user updates",
+          ],
+        },
+        {
+          name: "Initiatives",
+          tagline: "Ongoing work with progress",
+          description:
+            "Track work running across many installations, with per-installation progress (X/N) and an overall completion view.",
+          features: [
+            "Per-installation progress (X/N)",
+            "Overall completion view",
+            "Status: in progress or completed",
+          ],
+        },
+        {
+          name: "Maintenance",
+          tagline: "Scheduled maintenance",
+          description:
+            "Announce scheduled maintenance with time windows, so the team and users know in advance.",
+          features: [
+            "Time windows",
+            "Advance notice",
+            "Progress tracking",
+          ],
+        },
+      ],
+      featuresHeading: "Features",
+      featuresIntro: "The tools that make status clear at a glance.",
+      features: [
+        { title: "Runs on your own infrastructure", description: "Runs on your own servers, in your data center or your own cloud. It isn't a subscription service (SaaS), and your data stays under your control." },
+        { title: "Active Directory sign-in", description: "Users and permissions come from your existing company accounts, with no separate credential store." },
+        { title: "Tiered access", description: "Different rights for management and for editing updates, set per user." },
+        { title: "Private entries", description: "Sensitive incidents are visible only to those with permission. To everyone else, they simply don't exist." },
+        { title: "Update feed", description: "A chronological feed of updates per entry, flagged when an update has been edited." },
+        { title: "Severity at a glance", description: "Four levels (Critical, Major, Minor, Info) color-coded for instant recognition." },
+        { title: "Recent history", description: "Resolved incidents and completed work remain available for review." },
+        { title: "Active vs history", description: "Separate sections for what's running now and what's closed." },
+      ],
+      stackHeading: "Technology",
+      stack: ["ASP.NET Core", "SQL Server", "Active Directory / LDAP", "MVC + Razor"],
+      cta: {
+        title: "Want something similar for your organization?",
+        subtitle: "Request a demo and see it in action.",
         button: "Request a demo",
       },
     },

@@ -16,28 +16,57 @@ import {
   Languages,
   CheckCircle2,
   ChevronRight,
+  AlertTriangle,
+  ListChecks,
+  Wrench,
+  History,
+  LayoutList,
+  type LucideIcon,
 } from "lucide-react";
 import { useLocale, useT, localizedHref } from "../../i18n/locale";
+import { SolStatusHeroMock, SolStatusModuleMock } from "./SolStatusMock";
 
-const moduleIcons = [Lock, Package, Server];
-const featureIcons = [Users, Network, GitBranch, Bell, ScrollText, Monitor, Settings, LifeBuoy, Languages];
-
-// Locale-aware screenshot paths. Files live in public/images/solsuite/<name>-<locale>.{webp,png}
-// Regenerate from src/assets/solsuite/ via `pnpm optimize:images`.
+type ProductKey = "solsuite" | "solstatus";
 type Screenshot = { webp: string; png: string };
-const heroScreenshot = (locale: "el" | "en"): Screenshot => ({
-  webp: `/images/solsuite/central-${locale}.webp`,
-  png: `/images/solsuite/central-${locale}.png`,
-});
-const moduleScreenshotKeys = ["solpass", "solassets", "solit"] as const;
-const moduleScreenshot = (locale: "el" | "en", i: number): Screenshot => ({
-  webp: `/images/solsuite/${moduleScreenshotKeys[i]}-${locale}.webp`,
-  png: `/images/solsuite/${moduleScreenshotKeys[i]}-${locale}.png`,
-});
+type Loc = "el" | "en";
 
-export function SolSuitePage() {
+// SolStatus has no shareable screenshots (real data is confidential), so its
+// visuals are rendered as fake, language-aware mock UIs instead.
+const MOCK_KINDS = ["incidents", "initiatives", "maintenance"] as const;
+
+// Per-product icon sets (module cards + features grid).
+const MODULE_ICONS: Record<ProductKey, LucideIcon[]> = {
+  solsuite: [Lock, Package, Server],
+  solstatus: [AlertTriangle, ListChecks, Wrench],
+};
+const FEATURE_ICONS: Record<ProductKey, LucideIcon[]> = {
+  solsuite: [Server, Network, Lock, Users, GitBranch, Bell, ScrollText, Monitor, Settings, LifeBuoy, Languages],
+  solstatus: [Server, Network, Users, Lock, ScrollText, AlertTriangle, History, LayoutList],
+};
+
+// SolSuite has real screenshots; SolStatus uses placeholders until provided.
+// To add SolStatus shots: drop files in public/images/solstatus/ and add a
+// resolver here mirroring the solsuite one.
+const SHOTS: Record<
+  ProductKey,
+  { hero: (l: Loc) => Screenshot; module: (l: Loc, i: number) => Screenshot } | null
+> = {
+  solsuite: {
+    hero: (l) => ({ webp: `/images/solsuite/central-${l}.webp`, png: `/images/solsuite/central-${l}.png` }),
+    module: (l, i) => {
+      const keys = ["solpass", "solassets", "solit"] as const;
+      return { webp: `/images/solsuite/${keys[i]}-${l}.webp`, png: `/images/solsuite/${keys[i]}-${l}.png` };
+    },
+  },
+  solstatus: null,
+};
+
+export function ProductDetailPage({ productKey }: { productKey: ProductKey }) {
   const locale = useLocale();
-  const t = useT().solsuite;
+  const t = useT()[productKey];
+  const moduleIcons = MODULE_ICONS[productKey];
+  const featureIcons = FEATURE_ICONS[productKey];
+  const shots = SHOTS[productKey];
 
   return (
     <div className="flex flex-col pt-24">
@@ -56,11 +85,7 @@ export function SolSuitePage() {
         </nav>
 
         {/* Hero */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="mb-16 max-w-3xl"
-        >
+        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="mb-16 max-w-3xl">
           <span className="text-sm font-semibold uppercase tracking-wider text-primary">{t.eyebrow}</span>
           <h1 className="mt-3 text-5xl font-bold tracking-tight sm:text-6xl lg:text-7xl" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
             {t.title}
@@ -76,31 +101,29 @@ export function SolSuitePage() {
           viewport={{ once: true }}
           className="mb-20 w-full overflow-hidden rounded-2xl border border-border/60 bg-card"
         >
-          {(() => {
-            const hero = heroScreenshot(locale);
-            return (
-              <picture>
-                <source type="image/webp" srcSet={hero.webp} />
-                <img
-                  src={hero.png}
-                  alt={`${t.title} overview`}
-                  className="w-full h-auto"
-                  loading="eager"
-                  fetchPriority="high"
-                  decoding="async"
-                />
-              </picture>
-            );
-          })()}
+          {shots ? (
+            <picture>
+              <source type="image/webp" srcSet={shots.hero(locale).webp} />
+              <img
+                src={shots.hero(locale).png}
+                alt={`${t.title} overview`}
+                className="h-auto w-full"
+                loading="eager"
+                fetchPriority="high"
+                decoding="async"
+              />
+            </picture>
+          ) : productKey === "solstatus" ? (
+            <SolStatusHeroMock locale={locale} />
+          ) : (
+            <div className="flex aspect-video items-center justify-center bg-gradient-to-br from-primary/10 via-surface to-background text-sm text-muted-foreground">
+              {t.title} screenshot
+            </div>
+          )}
         </motion.div>
 
-        {/* Modules */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="mb-12 max-w-2xl"
-        >
+        {/* Modules / tracks */}
+        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-12 max-w-2xl">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
             {t.modulesHeading}
           </h2>
@@ -110,7 +133,6 @@ export function SolSuitePage() {
         <div className="mb-20 grid gap-6 md:grid-cols-3">
           {t.modules.map((module, i) => {
             const Icon = moduleIcons[i];
-            const screenshot = moduleScreenshot(locale, i);
             return (
               <motion.div
                 key={module.name}
@@ -121,16 +143,18 @@ export function SolSuitePage() {
                 className="group flex flex-col overflow-hidden rounded-2xl border border-border/60 bg-card transition-all duration-200 hover:-translate-y-1 hover:border-primary/30 hover:bg-surface-elevated hover:shadow-xl hover:shadow-primary/10"
               >
                 <div className="w-full overflow-hidden border-b border-border/60 bg-card">
-                  <picture>
-                    <source type="image/webp" srcSet={screenshot.webp} />
-                    <img
-                      src={screenshot.png}
-                      alt={`${module.name} screenshot`}
-                      className="w-full h-auto"
-                      loading="lazy"
-                      decoding="async"
-                    />
-                  </picture>
+                  {shots ? (
+                    <picture>
+                      <source type="image/webp" srcSet={shots.module(locale, i).webp} />
+                      <img src={shots.module(locale, i).png} alt={`${module.name} screenshot`} className="h-auto w-full" loading="lazy" decoding="async" />
+                    </picture>
+                  ) : productKey === "solstatus" ? (
+                    <SolStatusModuleMock locale={locale} kind={MOCK_KINDS[i] ?? "incidents"} />
+                  ) : (
+                    <div className="flex aspect-[16/10] items-center justify-center bg-gradient-to-br from-primary/10 via-surface to-background text-xs text-muted-foreground">
+                      {module.name}
+                    </div>
+                  )}
                 </div>
                 <div className="flex flex-1 flex-col p-8">
                   <div className="mb-5 inline-flex w-fit rounded-xl bg-primary/10 p-3 text-primary">
@@ -155,13 +179,8 @@ export function SolSuitePage() {
           })}
         </div>
 
-        {/* Cross-cutting features */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="mb-12 max-w-2xl"
-        >
+        {/* Features grid */}
+        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-12 max-w-2xl">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
             {t.featuresHeading}
           </h2>
@@ -170,7 +189,7 @@ export function SolSuitePage() {
 
         <div className="mb-20 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {t.features.map((feature, i) => {
-            const Icon = featureIcons[i];
+            const Icon = featureIcons[i % featureIcons.length];
             return (
               <motion.div
                 key={feature.title}
@@ -193,21 +212,13 @@ export function SolSuitePage() {
         </div>
 
         {/* Tech stack */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="mb-20"
-        >
+        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-20">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
             {t.stackHeading}
           </h2>
           <div className="mt-6 flex flex-wrap gap-3">
             {t.stack.map((tech) => (
-              <span
-                key={tech}
-                className="rounded-lg border border-border/60 bg-surface px-4 py-2 text-sm text-muted-foreground"
-              >
+              <span key={tech} className="rounded-lg border border-border/60 bg-surface px-4 py-2 text-sm text-muted-foreground">
                 {tech}
               </span>
             ))}

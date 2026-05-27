@@ -17,7 +17,7 @@ import { useLocale, useT, localizedHref } from "../../i18n/locale";
 const serviceIcons = [Cloud, Server, Shield, Code2];
 const whyUsIcons = [Users, Clock, Zap];
 const productIcons = [Layers, Activity];
-const productDetailKeys = ["solsuite", null] as const;
+const productDetailKeys = ["solsuite", "solstatus"] as const;
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
