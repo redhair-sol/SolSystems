@@ -65,7 +65,7 @@ export const strings = {
         eyebrow: "Εφαρμογές μας",
         titleLine1: "Έτοιμες λύσεις",
         titleLine2: "που έχουμε υλοποιήσει",
-        intro: "Δεν φτιάχνουμε μόνο εξατομικευμένες λύσεις. Έχουμε αναπτύξει και δικές μας εφαρμογές για τη διαχείριση, την οργάνωση και την παρακολούθηση του IT σας.",
+        intro: "Δεν φτιάχνουμε μόνο εξατομικευμένες λύσεις. Έχουμε αναπτύξει δικές μας εφαρμογές για τη διαχείριση, την οργάνωση και την παρακολούθηση του IT σας.",
         learnMore: "Μάθετε περισσότερα",
         viewAll: "Όλα τα προϊόντα μας",
         list: [
@@ -73,7 +73,7 @@ export const strings = {
             name: "SolSuite",
             tagline: "Ολοκληρωμένο σύστημα διαχείρισης IT",
             description:
-              "Τρεις ενότητες σε ένα: SolPass για διαχείριση κωδικών, SolAssets για εξοπλισμό και άδειες, SolIt για παρακολούθηση υποδομής και καθημερινά IT tasks.",
+              "Τρεις ανεξάρτητες ενότητες σε μία πλατφόρμα: SolPass για διαχείριση κωδικών, SolAssets για εξοπλισμό και άδειες, SolIt για παρακολούθηση υποδομής και καθημερινές εργασίες IT.",
             stack: ["ASP.NET Core", "SQL Server", "Active Directory / LDAP"],
           },
           {
@@ -471,7 +471,7 @@ export const strings = {
             name: "SolSuite",
             tagline: "Comprehensive IT management system",
             description:
-              "Three modules in one: SolPass for credential management, SolAssets for equipment and licenses, SolIt for infrastructure monitoring and daily IT tasks.",
+              "Three independent modules in one platform: SolPass for credential management, SolAssets for equipment and licenses, SolIt for infrastructure monitoring and daily IT tasks.",
             stack: ["ASP.NET Core", "SQL Server", "Active Directory / LDAP"],
           },
           {
