@@ -21,8 +21,12 @@ export function ProductsPage() {
           <span className="text-sm font-semibold uppercase tracking-wider text-primary">{t.eyebrow}</span>
           <h1 className="mt-3 text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
             {t.titleLine1}
-            <br />
-            {t.titleLine2}
+            {t.titleLine2 && (
+              <>
+                <br />
+                {t.titleLine2}
+              </>
+            )}
           </h1>
           <p className="mt-6 text-lg text-muted-foreground">{t.intro}</p>
         </motion.div>

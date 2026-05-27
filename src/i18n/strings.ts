@@ -174,8 +174,8 @@ export const strings = {
       metaDescription:
         "Δικές μας εφαρμογές για διαχείριση IT operations: SolSuite (κωδικοί, εξοπλισμός, υποδομή) και SolStatus (status page).",
       eyebrow: "Προϊόντα",
-      titleLine1: "Δικά μας προϊόντα",
-      titleLine2: "για IT operations",
+      titleLine1: "Τα προϊόντα μας",
+      titleLine2: "",
       intro:
         "Δεν αναπτύσσουμε μόνο εξατομικευμένες λύσεις. Έχουμε φτιάξει και δικές μας εφαρμογές που λύνουν συγκεκριμένα λειτουργικά προβλήματα IT.",
       items: [
@@ -561,8 +561,8 @@ export const strings = {
       metaDescription:
         "Our own applications for IT operations: SolSuite (credentials, equipment, infrastructure) and SolStatus (status page).",
       eyebrow: "Products",
-      titleLine1: "Our own products",
-      titleLine2: "for IT operations",
+      titleLine1: "Our products",
+      titleLine2: "",
       intro:
         "We don't only build custom solutions. We've also developed our own applications that solve specific IT operational problems.",
       items: [
