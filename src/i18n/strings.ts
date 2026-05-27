@@ -289,8 +289,8 @@ export const strings = {
       metaDescription:
         "Γνωρίστε τη SolSystems: την αποστολή, τις αξίες και την ομάδα πίσω από τις εταιρικές λύσεις IT μας.",
       eyebrow: "Σχετικά με εμάς",
-      titleLine1: "Συνεργάτες τεχνολογίας,",
-      titleLine2: "όχι απλώς προμηθευτές",
+      titleLine1: "Αξιόπιστη τεχνολογία,",
+      titleLine2: "χωρίς πολυπλοκότητα",
       intro:
         "Πιστεύουμε ότι η σπουδαία τεχνολογία είναι αόρατη. Απλώς δουλεύει. Η αποστολή μας είναι να φτιάχνουμε συστήματα τόσο αξιόπιστα και διαισθητικά, ώστε οι πελάτες μας να ξεχνούν την πολυπλοκότητα από κάτω.",
       approach: {
@@ -673,8 +673,8 @@ export const strings = {
       metaTitle: "About | SolSystems",
       metaDescription: "Learn about SolSystems: our mission, values, and the team behind our enterprise IT solutions.",
       eyebrow: "About Us",
-      titleLine1: "Technology partners,",
-      titleLine2: "not just vendors",
+      titleLine1: "Reliable technology,",
+      titleLine2: "without the complexity",
       intro:
         "We believe that great technology is invisible. It just works. Our mission is to build systems so reliable and intuitive that our clients forget about the complexity underneath.",
       approach: {
