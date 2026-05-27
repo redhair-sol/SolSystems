@@ -64,8 +64,8 @@ export const strings = {
       products: {
         eyebrow: "Εφαρμογές μας",
         titleLine1: "Έτοιμες λύσεις",
-        titleLine2: "που έχουμε φτιάξει",
-        intro: "Δεν φτιάχνουμε μόνο εξατομικευμένες λύσεις. Έχουμε αναπτύξει και δικές μας εφαρμογές που λύνουν συγκεκριμένα προβλήματα IT.",
+        titleLine2: "που έχουμε υλοποιήσει",
+        intro: "Δεν φτιάχνουμε μόνο εξατομικευμένες λύσεις. Έχουμε αναπτύξει και δικές μας εφαρμογές για τη διαχείριση, την οργάνωση και την παρακολούθηση του IT σας.",
         learnMore: "Μάθετε περισσότερα",
         viewAll: "Όλα τα προϊόντα μας",
         list: [
@@ -463,7 +463,7 @@ export const strings = {
         eyebrow: "Our Apps",
         titleLine1: "Ready-made solutions",
         titleLine2: "we've built",
-        intro: "We don't only build custom solutions. We've also developed our own applications that solve specific IT problems.",
+        intro: "We don't only build custom solutions. We've also developed our own applications for managing, organizing, and monitoring your IT.",
         learnMore: "Learn more",
         viewAll: "View all products",
         list: [
