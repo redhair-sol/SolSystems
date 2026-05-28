@@ -297,7 +297,7 @@ export const strings = {
       tagline: "Σελίδα κατάστασης IT υπηρεσιών",
       intro:
         "Το SolStatus δίνει καθαρή εικόνα της κατάστασης των IT υπηρεσιών σε πραγματικό χρόνο: ενεργές βλάβες, τρέχουσες εργασίες και προγραμματισμένη συντήρηση, όλα σε ένα σημείο με ροή ενημερώσεων και ιστορικό. Εγκαθίσταται στη δική σας υποδομή, στο data center ή στο δικό σας cloud, ώστε τα δεδομένα των συμβάντων να παραμένουν υπό τον έλεγχό σας.",
-      modulesHeading: "Τι παρακολουθεί",
+      modulesHeading: "Τι παρακολουθεί το SolStatus",
       modulesIntro: "Τρεις τύποι καταχωρήσεων, ο καθένας με τη δική του ροή κατάστασης.",
       modules: [
         {
@@ -754,7 +754,7 @@ export const strings = {
       tagline: "IT services status page",
       intro:
         "SolStatus gives a clear, real-time view of your IT services status: active incidents, ongoing work, and scheduled maintenance, all in one place with an update feed and history. It runs on your own infrastructure, in your data center or your own cloud, so incident data stays under your control.",
-      modulesHeading: "What it tracks",
+      modulesHeading: "What SolStatus tracks",
       modulesIntro: "Three entry types, each with its own status flow.",
       modules: [
         {
