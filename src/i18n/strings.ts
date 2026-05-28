@@ -222,10 +222,10 @@ export const strings = {
           name: "SolPass",
           tagline: "Διαχείριση κωδικών και στοιχείων πρόσβασης",
           description:
-            "Κρυπτογραφημένο Vault με πρόσβαση βάσει ρόλων, ξεχωριστό προσωπικό Vault ανά χρήστη, ενσωματωμένη γεννήτρια κωδικών, και ειδοποιήσεις λήξης. Πλήρης καταγραφή σε κάθε ανάκτηση.",
+            "Κρυπτογραφημένο Vault (AES-256-GCM) με πρόσβαση βάσει ρόλων, ξεχωριστό προσωπικό Vault ανά χρήστη, ενσωματωμένη γεννήτρια κωδικών, και ειδοποιήσεις λήξης. Πλήρης καταγραφή σε κάθε ανάκτηση.",
           features: [
-            "Κρυπτογραφημένο κοινό Vault με πρόσβαση βάσει ρόλων",
-            "Προσωπικό Vault με κύριο κωδικό",
+            "Κρυπτογραφημένο κοινό Vault με πρόσβαση βάσει ρόλων (AES-256-GCM)",
+            "Προσωπικό Vault με κύριο κωδικό που δεν αποθηκεύεται (PBKDF2-SHA256, 200.000 iterations)",
             "SolGen: γεννήτρια ισχυρών κωδικών",
             "Ειδοποιήσεις λήξης στοιχείων πρόσβασης",
             "Ασφαλής κοινή χρήση ανά τμήμα",
@@ -267,6 +267,7 @@ export const strings = {
         { title: "Στη δική σας υποδομή", description: "Τρέχει στους δικούς σας διακομιστές: στο data center ή στο δικό σας cloud. Δεν είναι συνδρομητική υπηρεσία (SaaS) και τα δεδομένα παραμένουν υπό τον έλεγχό σας." },
         { title: "Ενσωμάτωση Active Directory", description: "Οι ομάδες AD ελέγχουν την πρόσβαση ανά ενότητα και ανά λειτουργία (π.χ. SolAssets Reports, SolPass). Υποστηρίζονται και ρόλοι μόνο-ανάγνωσης, για χρήστες που βλέπουν αναφορές χωρίς να αλλάζουν δεδομένα." },
         { title: "Άμεση ανάκληση πρόσβασης", description: "Μόλις ένας λογαριασμός απενεργοποιηθεί ή χάσει δικαίωμα στο Active Directory, η πρόσβαση στο σύστημα κόβεται άμεσα." },
+        { title: "Κρυπτογράφηση", description: "AES-256-GCM σε κάθε κρυπτογραφημένη εγγραφή. Στο προσωπικό Vault, το κλειδί παράγεται από τον κύριο κωδικό του χρήστη μέσω PBKDF2-SHA256 με 200.000 iterations και δεν αποθηκεύεται πουθενά." },
         { title: "Πελατολόγιο", description: "Διαχείριση πελατών με στοιχεία επικοινωνίας και τοποθεσία, διασύνδεση σε όλες τις ενότητες." },
         { title: "Οργανόγραμμα", description: "Οπτικοποίηση ιεραρχίας τμημάτων και χρηστών, με εξαγωγή σε Excel." },
         { title: "Έξυπνες Ειδοποιήσεις", description: "Συγκεντρωτικές ειδοποιήσεις λήξης στοιχείων πρόσβασης και αδειών λογισμικού σε ένα σημείο." },
@@ -681,10 +682,10 @@ export const strings = {
           name: "SolPass",
           tagline: "Credential management",
           description:
-            "Encrypted shared vault with role-based access, a separate personal vault per user, built-in password generator, and expiry notifications. Full audit log on every retrieval.",
+            "Encrypted shared vault (AES-256-GCM) with role-based access, a separate personal vault per user, built-in password generator, and expiry notifications. Full audit log on every retrieval.",
           features: [
-            "Encrypted shared vault with role-based access",
-            "Personal Vault with master password",
+            "Encrypted shared vault with role-based access (AES-256-GCM)",
+            "Personal Vault with a master password that is never stored (PBKDF2-SHA256, 200,000 iterations)",
             "SolGen: strong password generator",
             "Credential expiry notifications",
             "Secure sharing by department",
@@ -726,6 +727,7 @@ export const strings = {
         { title: "Runs on your own infrastructure", description: "Runs on your own servers, in your data center or your own cloud. It isn't a subscription service (SaaS), and your data stays under your control." },
         { title: "Active Directory integration", description: "AD groups control access per module and per sub-feature (e.g. SolAssets Reports, SolPass). Read-only roles are supported too, for users who view reports without changing data." },
         { title: "Instant access revocation", description: "The moment an account is disabled or loses its rights in Active Directory, its access to the system is cut off immediately." },
+        { title: "Encryption", description: "AES-256-GCM on every encrypted record. The personal Vault key is derived from the user's master password through PBKDF2-SHA256 with 200,000 iterations and is never stored." },
         { title: "Customers", description: "Customer management with contact and location details, linked across all modules." },
         { title: "Organogram", description: "Visual hierarchy of departments and users, with Excel export." },
         { title: "Smart Notifications", description: "Aggregated alerts for expiring credentials and software licenses in one place." },

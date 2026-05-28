@@ -41,7 +41,7 @@ const MODULE_ICONS: Record<ProductKey, LucideIcon[]> = {
   solstatus: [AlertTriangle, ListChecks, Wrench],
 };
 const FEATURE_ICONS: Record<ProductKey, LucideIcon[]> = {
-  solsuite: [Server, Network, Lock, Users, GitBranch, Bell, ScrollText, Monitor, Settings, LifeBuoy, Languages],
+  solsuite: [Server, Network, Lock, KeyRound, Users, GitBranch, Bell, ScrollText, Monitor, Settings, LifeBuoy, Languages],
   solstatus: [Server, Network, KeyRound, Users, Lock, ScrollText, AlertTriangle, History, LayoutList],
 };
 
