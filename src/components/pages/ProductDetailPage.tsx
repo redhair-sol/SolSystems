@@ -21,6 +21,7 @@ import {
   Wrench,
   History,
   LayoutList,
+  KeyRound,
   type LucideIcon,
 } from "lucide-react";
 import { useLocale, useT, localizedHref } from "../../i18n/locale";
@@ -41,7 +42,7 @@ const MODULE_ICONS: Record<ProductKey, LucideIcon[]> = {
 };
 const FEATURE_ICONS: Record<ProductKey, LucideIcon[]> = {
   solsuite: [Server, Network, Lock, Users, GitBranch, Bell, ScrollText, Monitor, Settings, LifeBuoy, Languages],
-  solstatus: [Server, Network, Users, Lock, ScrollText, AlertTriangle, History, LayoutList],
+  solstatus: [Server, Network, KeyRound, Users, Lock, ScrollText, AlertTriangle, History, LayoutList],
 };
 
 // SolSuite has real screenshots; SolStatus uses placeholders until provided.

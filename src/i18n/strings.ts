@@ -339,6 +339,7 @@ export const strings = {
       features: [
         { title: "Στη δική σας υποδομή", description: "Τρέχει στους δικούς σας διακομιστές: στο data center ή στο δικό σας cloud. Δεν είναι συνδρομητική υπηρεσία (SaaS) και τα δεδομένα παραμένουν υπό τον έλεγχό σας." },
         { title: "Σύνδεση με Active Directory", description: "Χρήστες και δικαιώματα από τους υπάρχοντες εταιρικούς λογαριασμούς, χωρίς ξεχωριστή βάση κωδικών." },
+        { title: "Single Sign-On", description: "Σύνδεση μέσω της Windows συνεδρίας με Kerberos/NTLM." },
         { title: "Διαβαθμισμένη πρόσβαση", description: "Διαφορετικά δικαιώματα για διαχείριση και για επεξεργασία ενημερώσεων, ανά χρήστη." },
         { title: "Ιδιωτικές καταχωρήσεις", description: "Ευαίσθητα συμβάντα ορατά μόνο σε όσους έχουν δικαίωμα. Για τους υπόλοιπους είναι σαν να μην υπάρχουν." },
         { title: "Ροή ενημερώσεων", description: "Χρονολογική ροή ενημερώσεων ανά καταχώρηση, με ένδειξη όταν μια ενημέρωση έχει διορθωθεί." },
@@ -796,6 +797,7 @@ export const strings = {
       features: [
         { title: "Runs on your own infrastructure", description: "Runs on your own servers, in your data center or your own cloud. It isn't a subscription service (SaaS), and your data stays under your control." },
         { title: "Active Directory sign-in", description: "Users and permissions come from your existing company accounts, with no separate credential store." },
+        { title: "Single Sign-On", description: "Sign-in via the Windows session using Kerberos/NTLM." },
         { title: "Tiered access", description: "Different rights for management and for editing updates, set per user." },
         { title: "Private entries", description: "Sensitive incidents are visible only to those with permission. To everyone else, they simply don't exist." },
         { title: "Update feed", description: "A chronological feed of updates per entry, flagged when an update has been edited." },
